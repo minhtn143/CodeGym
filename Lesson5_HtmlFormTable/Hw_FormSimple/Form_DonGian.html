@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegistrationForm</title>
+    <style>
+        body{
+            line-height: 20px;
+            margin: 10px 20% auto;
+            font-size: small;
+        }
+        .h1{
+            text-align: left;
+            color: blue;
+            background: aquamarine;
+            padding: 10px 10px;
+            margin: 10px;
+        }
+        .h2{
+            text-align: center;
+            color: white;
+            background: red;
+            padding: 10px 10px;
+            margin: 10px;
+        }
+        .form1{
+            width: 600px;
+            margin: auto auto 20px;
+            border: 10px solid cyan;
+            font-family: "DejaVu Serif", sans-serif;
+            line-height: 15px;
+            font-size: small;
+            background: white;
+        }
+        .form2{
+            width: 600px;
+            margin: auto auto 20px;
+            border: 0px solid cyan;
+            font-family: "DejaVu Serif", sans-serif;
+            line-height: 15px;
+            font-size: small;
+            background: lightyellow;
+        }
+        .label1{
+            color: orange;
+        }
+        .tdtitle1{
+            width: 100px;
+            color: blue;
+        }
+        .input180{
+            width: 180px;
+        }
+        .input100{
+            width: 150px;
+        }
+        </style>
+</head>
+<body>
+    <form class="form1">
+        <table>
+            <tr>
+                <td colspan="4"> <h1 class="h2"> SỎ THÍCH CỦA BẠN </h1></td>
+            </tr>
+            <tr>
+                <td class="tdtitle1"> Họ và tên </td>
+                <td colspan="3"> <label><input class="input180" type="text" name="yourname"></label></td>
+            </tr>
+            <tr>
+                <td class="tdtitle1"> Email </td>
+                <td colspan="3"> <label><input type="text" name="email" class="input100"></label></td>
+            </tr>
+            <tr>
+                <td class="tdtitle1"> Sở thích</td>
+                <td  >
+                    <label class="label1">
+                    <input type="checkbox" name="hobby">
+                    Thể thao
+                    </label>
+                </td>
+                <td  >
+                    <label class="label1">
+                    <input type="checkbox" name="hobby">
+                    Âm nhạc
+                    </label>
+                </td>
+                <td  >
+                    <label class="label1">
+                    <input type="checkbox" name="hobby">
+                    Đọc sách
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdtitle1"> </td>
+                <td  >
+                    <label class="label1">
+                    <input type="checkbox" name="hobby">
+                    Lướt web
+                    </label>
+                </td>
+                <td  >
+                    <label class="label1">
+                    <input type="checkbox" name="hobby">
+                    Chơi game
+                    </label>
+                </td>
+                <td  >
+                    <label class="label1">
+                    <input type="checkbox" name="hobby">
+                    Điện ảnh
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdtitle1"> </td>
+                <td  >
+                    <label class="label1">
+                    <input type="checkbox" name="hobby">
+                    Du lịch
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <label><input type="submit" value="Gửi thông tin"></label>
+                </td>
+                <td>
+                    <label><input type="reset" value="Nhập lại"></label>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+
+
+    <form class="form2" method="post" action="http://demo.codegym.vn/6/registration_form/register.php">
+        <table width="600px">
+            <tr> <td colspan="2"><h1 class="h1"> ĐĂNG KÝ HỌC VIÊN </h1></td></tr>
+            <tr>
+                <td class="tdtitle1"> Họ và tên</td>
+                <td><label>
+                    <input type="text" name="name">
+                </label></td>
+            </tr>
+            <tr>
+                <td class="tdtitle1"> Ngày sinh</td>
+                <td><label> <input type="date" name="DOB"></label></td>
+            </tr>
+
+            <tr>
+                <td class="tdtitle1"> Giới tính: </td>
+                <td>
+                    <label><input type="radio" name="gender" value="Nam">Nam</label>
+                    <label><input type="radio" name="gender" value="Nu">Nữ</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tdtitle1"> Địa chỉ</td>
+                <td><label> <textarea name="address" rows="3"></textarea>
+                </label></td>
+            </tr>
+
+            <tr>
+                <td class="tdtitle1"> Lớp</td>
+                <td>
+                    <label>
+                        <select>
+                            <option> ---Chọn lớp---</option>
+                            <option> 10B1</option>
+                            <option> 10C1</option>
+                            <option> 10D1</option>
+                            <option> 10A2</option>
+                            <option> 10B2</option>
+                            <option> 10C2</option>
+                            <option> 10D2</option>
+                        </select>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdtitle1"> Email:</td>
+                <td><label>
+                    <input type="text" name="email">
+                </label></td>
+            </tr>
+            <tr>
+                <td class="tdtitle1"> Số điện thoại:</td>
+                <td><label>
+                    <input type="text" name="phone">
+                </label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <label><input type="submit" value="Đăng ký"></label>
+                    <label><input type="reset" value="Nhập lại"></label>
+                </td>
+            </tr>
+        </table>
+          <br>
+          <br>
+
+         <!-- <label>Họ và tên<input type="text" name="name"> </label><br>
+        <label> Ngày sinh <input type="date" name="DOB"></label> <br>
+        <label>Số điện thoại <input type="text" name="phone"> </label><br>
+        Giới tính
+        <label><input type="radio" id="Nam" name="gender" value="Nam">Nam</label>
+        <label><input type="radio" id="Nữ" name="gender" value="Nữ">Nữ</label> <br>
+        <label>  Địa chỉ <textarea> </textarea></label> <br>
+        <label> Lớp
+            <select>
+                <option> A1</option>
+                <option> A2</option>
+                <option> B1</option>
+                <option> B2</option>
+            </select>
+        </label> <br>
+        Email <label> <input type="text" name="email"> </label> <br>
+            <label><input type="submit" value="Đăng ký"></label> <br> -->
+    </form>
+
+</body>
+</html>

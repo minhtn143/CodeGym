@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập Biến, kiểu dữ liệu và toán tử</title>
+    <style>
+        th{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset name="Bai1">
+            <legend> Bài 1: Tính tổng và trung bình</legend>
+            <table>
+        <tr>
+                <th>Nhập điểm vật lý:</th>
+                <td> <input type="text" id="VatLy" name="VatLy" placeholder="Điểm môn Vật lý" maxlength="5"> <br></td>
+        </tr>
+        <tr>
+            <th> Nhập điểm Hóa học: </th>
+            <td> <input type="text" id="HoaHoc" name="HoaHoc" placeholder="Điểm môn Hóa học" maxlength="5"> <br> </td>
+        </tr>
+        <tr>
+                <th> Nhập điểm Sinh học:</th>
+                <td><input type="text" id="SinhHoc" name="SinhHoc" placeholder="Điểm môn Sinh học" maxlength="5"> <br> </td>
+        </tr>
+        <tr>
+            <th> Điểm Tổng</th>
+            <td> <input disabled type="text" id="Tong"></td>
+        </tr>
+        <tr>
+            <th>Điểm Trung bình</th>
+            <td><input disabled type="text" id="TBinh"></td>
+        </tr>
+            </table>
+        <button type="button" onclick="TinhTB(), TinhTong()"> Tính </button>
+            <button type="reset"> Reset</button>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset name="Bai2">
+            <legend> Bài 2: Chuyển nhiệt độ</legend>
+            Nhập nhiệt độ C
+            <input type="text" id="NhapC" placeholder="Độ C">
+            chuyển đổi sang độ F
+            <input type="text" id="XuatF" placeholder="Độ F" disabled>
+            <br>
+            <button type="button" onclick="ChuyenDoi()"> Chuyển đổi</button>
+            <button type="reset"> Reset</button>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset name="Bai34">
+            <legend> Bài 3,4: Tính diện tích, chu v hình tròn</legend>
+            <table>
+                <tr>
+                    <th>Nhập bán kính</th>
+                    <td><input type="text" id="nBanKinh" placeholder="Bán kính"> <br></td>
+                </tr>
+                <tr>
+                    <th>Chu vi hình tròn</th>
+                    <td> <input type="text" id="xChuVi" placeholder="Chu vi" disabled> <br></td>
+                </tr>
+                <tr>
+                    <th>Diện tích hình tròn</th>
+                    <td><input type="text" id="xDienTich" placeholder="Diện tích" disabled> <br></td>
+                </tr>
+                <tr>
+                    <td> <button type="button" onclick="TinhCvDt()"> Tính chu vi, diện tích</button>
+                        <button type="reset"> Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <script src="BT_1Bien_kieuDL_ToanTu.js"></script>
+</body>
+</html>

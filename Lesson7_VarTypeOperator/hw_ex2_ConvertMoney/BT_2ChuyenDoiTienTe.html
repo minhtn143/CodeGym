@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="nGiaTri">
+            </td>
+            <td>
+                <label><select id="im">
+                    <option id="imVND" value="23300"> VND</option>
+                    <option id="imUSD" value="1"> USD</option>
+                    <option id="imGBP" value="0.78"> GBP</option>
+                </select></label>
+            </td>
+            <td>
+                <label><select id="ex">
+                    <option id="exUSD" value="1"> USD</option>
+                    <option id="exVND" value="23300"> VND</option>
+                    <option id="exGBP" value="0.78"> GBP</option>
+                </select></label>
+            </td>
+            <td>
+                <button type="button" id="Convert" onclick="fConvert()"> Convert</button>
+            </td>
+        </tr>
+    </table>
+    <br>
+    Result:
+    <div id="messageDiv"></div>
+<script>
+    function fConvert() {
+        let imVao;
+        imVao=document.getElementById('nGiaTri').value;
+        imVao=parseFloat(imVao);
+        a=parseFloat(document.getElementById('im').value);
+        b=parseFloat(document.getElementById('ex').value);
+        exXuat = imVao*b/a;
+        document.getElementById('messageDiv').innerHTML = exXuat.toFixed(4);
+    }
+</script>
+</body>
+</html>

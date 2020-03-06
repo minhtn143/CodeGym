@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function GiaiPT() {
+            let a,b;
+            a = prompt("Nhap A:");
+            a = Number.parseFloat(a);
+
+            b = prompt('Nhap B:');
+            b = Number.parseFloat(b);
+
+            if (a==0)
+                if (b==0)
+                    alert("PT vo so nghiem")
+                else
+                    alert("PT vo nghiem")
+            else
+                alert("PT co nghiem x= " + -b/a);
+        }
+        function CheckNum() {
+            let a;
+            a = prompt("Nhap A:");
+            a = Number.parseInt(a);
+
+                if (a>9999)
+                    alert("Khong hop le")
+                else
+                    if (a==0)
+                        alert("So Khong")
+                    else
+                        if (a<0)
+                            alert(a +" la so am")
+                        else
+                            if (a<=9)
+                                alert(a+" so co 1 chu so")
+                            else
+                                if (a<=99)
+                                    alert(a+ "so co 2 chu so")
+                                else
+                                    if (a<=999)
+                                        alert(a+"so co 3 chu so")
+                                    else
+                                        alert(a+"so co 4 chu so");
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="GiaiPT()">Giai phuong trinh</button>
+    <button onclick="CheckNum()"> Check so</button>
+</body>
+</html>

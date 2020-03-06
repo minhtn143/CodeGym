@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Reseach Survey</title>
+    <style>
+        table{
+            border: 1px black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            width: 60px;
+        }
+        tr:nth-child(odd) {
+            background-color: #dddddd;
+        }
+        .cot1{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="">Market Research Survey</h2>
+    Please take a few moments to complete this satisfaction survey.
+    <div>
+        <label for="age">
+        <b>What is your age range?</b> <br>
+            <select id="age">
+                <option>18-24</option>
+                <option>25-34</option>
+                <option>35-50</option>
+                <option>50+</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label for="income">
+        <b>What is your yearly income range?</b> <br>
+            <select id="income">
+                <option>$0 - $25,000</option>
+                <option>$25,001 - $50,000</option>
+                <option>$50,001 - $100,000</option>
+                <option>$100,000+</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <b>Gender Identity</b> <br>
+        <input id="GenderM" name="Gender" type="radio" value="Male">
+        <label for="GenderM"> Male</label> <br>
+        <input id="GenderF" name="Gender" type="radio" value="Female">
+        <label for="GenderF"> Female</label> <br>
+        <input id="GenderN" name="Gender" type="radio" value="Nonbinary">
+        <label for="GenderN"> Nonbinary</label> <br>
+        <input id="GenderO" name="Gender" type="radio" value="Other">
+        <label for="GenderO"> Other</label>
+    </div>
+    <div>
+        <b>Which of the following products have your purchased in the last 2 months. Please check all that apply.</b>
+        <br>
+        <input type="checkbox" id="Product1" name="product" value="Product 1">
+        <label for="Product1"> Product1</label> <br>
+        <input type="checkbox" id="Product2" name="product" value="Product 2">
+        <label for="Product2"> Product2</label> <br>
+        <input type="checkbox" id="Product3" name="product" value="Product 3">
+        <label for="Product3"> Product3</label> <br>
+    </div>
+    <div>
+        <b>How often would you use our new product?</b>
+        <br>
+        <input id="oftenUse1" name="Use" type="radio" value="Daily">
+        <label for="oftenUse1"> Daily</label> <br>
+        <input id="oftenUse2" name="Use" type="radio" value="Weekly">
+        <label for="oftenUse2"> Weekly</label> <br>
+        <input id="oftenUse3" name="Use" type="radio" value="Monthly">
+        <label for="oftenUse3"> Monthly</label> <br>
+    </div>
+ <div>
+     <b>What would you pay for the new product?</b>
+     <br>
+        $
+        <input id="Dola" name="Dola" type="text">
+        <label for="Dola"> .</label>
+        <input id="Cents" name="Cents" type="text">
+        <label for="Cents"> Cents</label>
+</div>
+     <div>
+        <label for="Ideal">
+            <b>What features would you like to see in the new product.</b> <br>
+        </label>
+        <textarea id="Ideal" rows="10" cols="50" placeholder=""></textarea>
+    </div>
+    <div>
+    Please rate your level of agreement with the following statements.
+    </div>
+<div>
+    <table>
+        <tr>
+            <th></th>
+            <th>Strongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+        </tr>
+        <tr>
+            <th class="cot1">Our products are priced fairly.</th>
+            <td>
+                <input id="StrDisagree1" name="PriceFairly" type="radio" value="1">
+                <label for="StrDisagree1"> 1</label>
+            </td>
+            <td>
+                <input id="Disagree1" name="PriceFairly" type="radio" value="2">
+                <label for="Disagree1"> 2</label>
+            </td>
+            <td>
+                <input id="Agree1" name="PriceFairly" type="radio" value="3">
+                <label for="Agree1"> 3</label>
+            </td>
+            <td>
+                <input id="StrAgree" name="PriceFairly" type="radio" value="4">
+                <label for="StrAgree"> 4</label>
+            </td>
+        </tr>
+        <tr>
+            <th class="cot1">Our products are high quality.</th>
+            <td>
+                <input id="StrDisagree2" name="PriceFairly" type="radio" value="1">
+                <label for="StrDisagree2"> 1</label>
+            </td>
+            <td>
+                <input id="Disagree2" name="PriceFairly" type="radio" value="2">
+                <label for="Disagree2"> 2</label>
+            </td>
+            <td>
+                <input id="Agree2" name="PriceFairly" type="radio" value="3">
+                <label for="Agree2"> 3</label>
+            </td>
+            <td>
+                <input id="StrAgree4" name="PriceFairly" type="radio" value="4">
+                <label for="StrAgree4"> 4</label>
+            </td>
+        </tr>
+        <tr>
+            <th class="cot1">You would recommend our product to a friend or coworker.</th>
+            <td>
+                <input id="StrDisagree3" name="PriceFairly" type="radio" value="1">
+                <label for="StrDisagree3"> 1</label>
+            </td>
+            <td>
+                <input id="Disagree3" name="PriceFairly" type="radio" value="2">
+                <label for="Disagree3"> 2</label>
+            </td>
+            <td>
+                <input id="Agree3" name="PriceFairly" type="radio" value="3">
+                <label for="Agree3"> 3</label>
+            </td>
+            <td>
+                <input id="StrAgree3" name="PriceFairly" type="radio" value="4">
+                <label for="StrAgree3"> 4</label>
+            </td>
+        </tr>
+    </table>
+</div>
+    <input type="submit" name="submit" value="SUBMIT">
+</body>
+</html>

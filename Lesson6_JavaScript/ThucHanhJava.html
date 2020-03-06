@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java</title>
+    <script>
+        function hellosomeone() {
+            let fullname = prompt('Nhap ho va ten');
+            alert('Hello '+ fullname)
+            document.write("hello "+ fullname)
+        }
+        function calSum() {
+            let x = prompt("x=");
+            x = parseFloat(x);
+            let y = prompt("y=");
+            y = Number.parseFloat(y);
+            document.write("x+y=" + (x+y))
+        }
+    </script>
+</head>
+<body onload="alert('Load xong')">
+    <button onclick="hellosomeone()"> Nhap ho ten</button>
+    <button onclick="confirm(('Are you sure?'))"> Closer</button>
+    <button onclick="calSum()">SUM</button>
+
+</body>
+</html>

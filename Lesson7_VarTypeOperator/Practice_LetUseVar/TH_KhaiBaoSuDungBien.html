@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button type="button" onclick="showMessage();">Click Me!</button>
+    <script>
+        let i= 10;
+        let f = 20.5;
+        let b = true;
+        let s = 'Hà Nội';
+        let width = 20;
+        let height = 10;
+        let area = width * height;
+
+    function showMessage() {
+        document.write('i = ' + i);
+        document.write('<br/>');
+        document.write('f = ' + f);
+        document.write('<br/>');
+        document.write('b = ' + b);
+        document.write('<br/>');
+        document.write('s = ' + s);
+        document.write('<br/>');
+        document.write('Area = ' + area);
+    }
+    function check() {
+        soA = prompt("Nhập số A:");
+        soA = parseFloat(soA);
+        soB = prompt("Nhập số B");
+        soB = parseFloat(soB);
+        if (soA % soB == 0) {
+            alert('A là bội số của B')}
+            else {
+            alert('A không phải bội số của B');
+        }
+    }
+    </script>
+    <button type="button" onclick="check();">Click Me to Check!</button>
+</body>
+</html>

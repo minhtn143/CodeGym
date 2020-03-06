@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Triangle</title>
+</head>
+<body>
+    Nhap canh A
+    <input id="canhA" type="text" placeholder="Nhap do dai A">
+    <br>
+    Nhap canh B
+    <input id="canhB" type="text" placeholder="Nhap do dai B">
+    <br>
+    Nhap canh C
+    <input id="canhC" type="text" placeholder="Nhap do dai C">
+    <br>
+    Chu vi
+    <input id="ChuVi" type="text" disabled>
+    <br>
+    Dien tich
+    <input id="DienTich" type="text" disabled>
+    <p id="result"> </p>
+    <br>
+    <button type="button" id="Check" onclick="Check()">Check</button>
+    <input id="bReset" type="button" value="reset" onclick="reset()">
+<script>
+    function Check() {
+        let a,b,c;
+        a = document.getElementById("canhA").value;
+        b = document.getElementById("canhB").value;
+        c = document.getElementById("canhC").value;
+        a=parseFloat(a);
+        b=parseFloat(b);
+        c=parseFloat(c);
+        if ((a+b>c) && (a+c>b) && (b+c>a)){ //xet dieu kien tam giac
+            if((a==b)&& (b==c) && (a==c)){
+                document.getElementById('result').innerHTML ="Day la tam giac deu"} //xet tam giac deu
+            else
+                if((a==b)||(b==c)||(a==c)){          //xet tam giac can
+                    if((a**2+b**2==c**2)||(a**2+c**2==b**2)||(b**2+c**2==a**2)){        //xet tam vuong van
+                        document.getElementById('result').innerHTML ="Day la tam giac vuong can"
+                    }
+                    else
+                        document.getElementById('result').innerHTML ="Day la tam giac can"  //xet tam giac can
+                }
+                else
+                    if((a**2+b**2==c**2)||(a**2+c**2==b**2)||(b**2+c**2==a**2)){
+                        document.getElementById('result').innerHTML ="Day la tam giac vuong"}
+                    else
+                        document.getElementById('result').innerHTML ="Day la tam giac";
+            CVi=a+b+c;
+            Dtich= Math.sqrt(CVi*(CVi-a)*(CVi-b)*(CVi-c))
+            console.log(CVi);
+            console.log(Dtich);
+            document.getElementById("ChuVi").value= CVi;
+            document.getElementById("DienTich").value= Dtich;
+        }
+        else
+            document.getElementById('result').innerHTML ="Day khong phai la tam giac";
+    }
+    function reset() {
+        document.getElementById('result').innerHTML = "";
+        document.getElementById('canhA').innerHTML = "";
+        document.getElementById('canhB').innerHTML = "";
+        document.getElementById('canhC').innerHTML = "";
+        document.getElementById('ChuVi').value = "";
+        document.getElementById('DienTich').value = "";
+    }
+</script>
+
+</body>
+</html>

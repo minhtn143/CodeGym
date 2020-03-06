@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Product Information</title>
+        <meta name="description" content="Nhập thông tin hàng hóa" />
+        <meta name="author" content="Minh Tran"/>
+        <style>
+            form{
+                width: 800px;
+                background: lightyellow;
+            }
+            .input1{
+                width: 300px;
+                height: 10px;
+                margin: 10px auto auto;
+                 }
+            #ImportFile{ display: none}
+        </style>
+        <script>
+            function showForm(){
+                document.getElementById("ImportFile").style.display = "block";
+
+            }
+            function closeForm(){
+                document.getElementById("ImportFile").style.display = "none";
+
+            }
+        </script>
+    </head>
+    <body>
+        <input type="hidden" id="secret" name="secret" value="đây là 1 bài tập buồn">
+        <h2> Product Information</h2>
+    <form  id="ImportFile" method="post" action="#">
+        <fieldset>
+            <legend><b>Add Product Details </b></legend>
+            <label>
+                <b>Branch name:</b>
+                <input class="input1" type="text" name="Branch name" placeholder="Branch name">
+            </label> <br>
+            <label>
+                <b>Product name</b>
+                <input class="input1" type="text" name="Product name" placeholder="Product name">
+            </label> <br>
+            <div>
+                <label for="country">
+                    <b>Made in: </b>
+                    <select id="country">
+                    <option value="China"> China</option>
+                    <option value="Viet Nam"> Viet Nam</option>
+                    <option value="Korea"> Korea</option>
+                    <option value="Thailand"> Thailand</option>
+                    </select> <br>
+                </label>
+            </div>
+            <div>
+                <b>Select Categories</b>
+                <label for="Man">
+                    <input type="radio" id="Man" name="Categories" value="Man">
+                    Man Clothing
+                </label>
+                <label for="Woman">
+                    <input type="radio" id="Woman" name="Categories" value="Woman">
+                    Woman Clothing
+                </label>
+                <br>
+            </div>
+            <div>
+                <b>Size:</b>
+                <label for="Small">
+                    <input type="checkbox" id="Small" name="Size" value="S">
+                    S
+                </label>
+                <label for="Medium">
+                    <input type="checkbox" id="Medium" name="Size" value="M">
+                    M
+                </label>
+                <label for="Large">
+                    <input type="checkbox" id="Large" name="Size" value="L">
+                    L
+                </label>
+            <br>
+            </div>
+            <div>
+                <b>Price:</b> Select Price range:
+                <input type="radio" id="Cheap" name="Price" value="1$-10$">
+                <label for="Cheap">1$~10$</label>
+                <input type="radio" id="Normal" name="Price" value="10$-30$">
+                <label for="Normal">10$~30$</label>
+                <input type="radio" id="Expensive" name="Price" value="30$-100$">
+                <label for="Expensive">30$-100$</label>
+                <br>
+            </div>
+            <div>
+                <label>
+                    <b>Manufacturing Date:</b>
+                    <input type="date" name="MFG" value="Manufacturing date:">
+                </label>
+                <br>
+            </div>
+            <div>
+                <b>Product Image:</b>
+                <input type="file" id="image" value="Upload Product Image">
+            </div>
+            <div>
+                <b><label for="Product Details"> Product Details:</label></b>
+                <br>
+                <textarea id="Product Details" rows="6" cols="100px"></textarea>
+            <br>
+            </div>
+            <div>
+                <button>
+                    Save
+                    <img src="https://visualpharm.com/assets/637/Save-595b40b85ba036ed117dc63d.svg"  alt="Missing file" width="10px"/>
+                </button>
+                <input type="reset" value="Redo">
+                <input type="submit" name="Send" value="Send">
+                <input type="button" value="Close" onclick="closeForm()">
+            </div>
+        </fieldset>
+    </form>
+
+    <h2>Product List</h2>
+        <button onclick="showForm()">Add new product</button><br>
+    <table border="1px">
+        <tr>
+            <th> No.</th>
+            <th> Branch name</th>
+            <th> Product name</th>
+            <th> Made in</th>
+            <th> Categories</th>
+            <th> Action</th>
+        </tr>
+        <tr>
+            <td> 1</td>
+            <td> Gucci</td>
+            <td> T-shirt</td>
+            <td> China</td>
+            <td> Man Clothing</td>
+            <td>Sửa | Xoá</td>
+        </tr>
+        <tr>
+            <td> 2</td>
+            <td> Chanel</td>
+            <td> T-shirt</td>
+            <td> Vietnam</td>
+            <td> Woman Clothing</td>
+            <td>Sửa | Xoá</td>
+        </tr>
+        <tr>
+            <td> 3</td>
+            <td> Versace</td>
+            <td> Coat</td>
+            <td> Thailand</td>
+            <td> Man Clothing</td>
+            <td>Sửa | Xoá</td>
+        </tr>
+    </table>
+
+    </body>
+</html>

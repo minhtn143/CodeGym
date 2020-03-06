@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bàn cờ vua</title>
+    <style>
+        form{
+            alignment: center;
+            width: 360px;
+            height: 360px;
+            background: orange;
+        }
+        .trang{
+            width: 40px;
+            height: 40px;
+            background: white;
+        }
+        .den{
+            width: 40px;
+            height: 40px;
+            background: black;
+        }
+        table.chessboard1{
+            background: white;
+            border-collapse: collapse;
+        }
+        tr.chessboard1:nth-child(odd) td.chessboard1:nth-child(even),
+        tr.chessboard1:nth-child(even) td.chessboard1:nth-child(odd){
+            background: black;
+        }
+        td.chessboard1{
+            width: 40px;
+            height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <td></td>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+            </tr>
+            <tr>
+                <th>A</th>
+                <td class="trang"></td> <td class="den"></td> <td class="trang"></td> <td class="den"></td><td class="trang"></td> <td class="den"></td><td class="trang"></td> <td class="den"></td>
+            </tr>
+            <tr>
+                <th>B</th>
+                <td class="den"></td> <td class="trang"></td> <td class="den"></td> <td class="trang"></td><td class="den"></td> <td class="trang"></td><td class="den"></td> <td class="trang"></td>
+            </tr>
+            <tr>
+                <th>C</th>
+                <td class="trang"></td> <td class="den"></td> <td class="trang"></td> <td class="den"></td><td class="trang"></td> <td class="den"></td><td class="trang"></td> <td class="den"></td>
+            </tr>
+            <tr>
+                <th>D</th>
+                <td class="den"></td> <td class="trang"></td> <td class="den"></td> <td class="trang"></td><td class="den"></td> <td class="trang"></td><td class="den"></td> <td class="trang"></td>
+            </tr>
+            <tr>
+                <th>E</th>
+                <td class="trang"></td> <td class="den"></td> <td class="trang"></td> <td class="den"></td><td class="trang"></td> <td class="den"></td><td class="trang"></td> <td class="den"></td>
+            </tr>
+            <tr>
+                <th>F</th>
+                <td class="den"></td> <td class="trang"></td> <td class="den"></td> <td class="trang"></td><td class="den"></td> <td class="trang"></td><td class="den"></td> <td class="trang"></td>
+            </tr>
+            <tr>
+                <th>G</th>
+                <td class="trang"></td> <td class="den"></td> <td class="trang"></td> <td class="den"></td><td class="trang"></td> <td class="den"></td><td class="trang"></td> <td class="den"></td>
+            </tr>
+            <tr>
+                <th>H</th>
+                <td class="den"></td> <td class="trang"></td> <td class="den"></td> <td class="trang"></td><td class="den"></td> <td class="trang"></td><td class="den"></td> <td class="trang"></td>
+            </tr>
+        </table>
+    </form>
+<br>
+    <form>
+        <table class="chessboard1" cellpadding="0" cellspacing="0"  >
+            <tr>
+                <td></td>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+            </tr>
+            <tr class="chessboard1">
+                <th> A</th>
+                <td> </td> <td></td> <td>  </td> <td></td><td>  </td> <td></td><td>  </td> <td></td>
+            </tr>
+            <tr>
+                <th>B</th>
+                <td> </td> <td></td> <td>  </td> <td></td><td>  </td> <td></td><td>  </td> <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
