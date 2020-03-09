@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6024186-ee82-4991-92f4-3ffade953bd2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Lesson7_VarTypeOperator/Hw_CalculatorExt/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lesson7_VarTypeOperator/Hw_CalculatorExt/.idea/Hw_CalculatorExt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lesson7_VarTypeOperator/Hw_CalculatorExt/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lesson7_VarTypeOperator/Hw_CalculatorExt/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lesson7_VarTypeOperator/Hw_CalculatorExt/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lesson7_VarTypeOperator/Hw_CalculatorExt/Index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lesson7_VarTypeOperator/Hw_CalculatorExt/java/Function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hw_BMI/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hw_BMI/.idea/Hw_BMI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hw_BMI/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hw_BMI/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hw_BMI/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hw_BMI/BMI.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_Condition-IfElseIf/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EventKeyBoard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_EventMouse/EventMouse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_IfElseIf/.idea/Practice_IfElseIf.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_Switch-Case/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_Switch-Case/.idea/Practice_Switch-Case.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_Switch-Case/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_Switch-Case/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_Switch-Case/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_Switch-Case/Practice_SwitchCase1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_Switch-Case/Practice_SwitchCase2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_Switch-Case/sign.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_SwitchCaseInClass/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_SwitchCaseInClass/.idea/Practice_SwitchCase.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_SwitchCaseInClass/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_SwitchCaseInClass/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_SwitchCaseInClass/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_SwitchCaseInClass/Bai7_DocSo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_SwitchCaseInClass/Bai7_KiemTraThang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_ToanTu3Ngoi/.idea/Practice_ToanTu3Ngoi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_ToanTu3Ngoi/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_ToanTu3Ngoi/employee.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1YtsIBEV0t8evcJ2RdCF8WfUHHB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6024186-ee82-4991-92f4-3ffade953bd2" name="Default Changelist" comment="" />
+      <created>1583773142955</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583773142955</updated>
+      <workItem from="1583773144448" duration="545000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

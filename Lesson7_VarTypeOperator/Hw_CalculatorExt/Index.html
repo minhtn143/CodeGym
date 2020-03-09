@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th colspan="6">Calculator Basic Mode</th>
+            </tr>
+            <tr>
+                <div class="Import">
+                    <td colspan="6"><input type="text" id="InputScreen"> </td>
+                </div>
+            </tr>
+            <div class="button">
+                <tr>
+                    <td><button type="button" value="7" onclick="ClickButton(this.value)"> 7 </button></td>
+                    <td> <button type="button" value="8" onclick="ClickButton(this.value)"> 8 </button> </td>
+                    <td> <button type="button" value="9" onclick="ClickButton(this.value)"> 9 </button></td>
+                    <td> <button type="button" value="/" onclick="ClickButton(this.value)"> / </button></td>
+                    <td> <button type="button" onclick="Clear(this.value)" value="Back"> &larr; </button></td>
+                    <td> <button type="button" onclick="Clear(this.value)" value="C"> C </button></td>
+                    <br>
+                </tr>
+                <tr>
+                    <td><button type="button" value="4" onclick="ClickButton(this.value)"> 4 </button></td>
+                    <td><button type="button" value="5" onclick="ClickButton(this.value)"> 5 </button></td>
+                    <td><button type="button" value="6" onclick="ClickButton(this.value)"> 6 </button></td>
+                    <td><button type="button" value="x" onclick="ClickButton(this.value)"> x </button></td>
+                    <td><button type="button" value="(" onclick="ClickButton(this.value)"> ( </button></td>
+                    <td><button type="button" value=")" onclick="ClickButton(this.value)"> ) </button></td>
+                    <br>
+                </tr>
+                <tr>
+                    <td><button type="button" value="1" onclick="ClickButton(this.value)"> 1 </button></td>
+                    <td><button type="button" value="2" onclick="ClickButton(this.value)"> 2 </button></td>
+                    <td><button type="button" value="3" onclick="ClickButton(this.value)"> 3 </button></td>
+                    <td><button type="button" value="-" onclick="ClickButton(this.value)"> - </button></td>
+                    <td><button type="button" value="**2" onclick="ClickButton(this.value)"> x<sup>2</sup> </button></td>
+                    <td><button type="button" value="" onclick="ClickButton(this.value)"> &radic; </button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="0" onclick="ClickButton(this.value)"> 0 </button></td>
+                    <td><button type="button" value="," onclick="ClickButton(this.value)"> , </button></td>
+                    <td><button type="button" value="%" onclick="ClickButton(this.value)"> % </button></td>
+                    <td><button type="button" value="+" onclick="ClickButton(this.value)"> + </button></td>
+                    <td colspan="2"><button type="button" value="=" onclick="ClickEqual()"> = </button></td>
+                </tr>
+            </div>
+        </table>
+    </div>
+    <script src="java/Function.js"></script>
+</body>
+</html>

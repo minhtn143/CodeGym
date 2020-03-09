@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function doc1SO(n) { //doc so co 1 chu so
+            switch (n) {
+                case 0: return "Không";
+                case 1: return "Một";
+                case 2: return "Hai";
+                case 3: return "Ba";
+                case 4: return "Bốn";
+                case 5: return "Năm";
+                case 6: return "Sáu";
+                case 7: return "Bảy";
+                case 8: return "Tám";
+                case 9: return "Chín";
+                default: return "Không biết";
+            }
+        }
+        function doc3So(n) {
+            let tram= Math.floor(n/100);
+            let chuc= (Math.floor(n/10)) %10; // 123/10 = 12 %10 =2
+            let donVi = n%10;
+
+            let str = "";
+            if (n<10){
+                str=doc1SO(n);
+            }
+            else {
+                if (tram == 0) {
+                    if (n>999){str=" Không Trăm"}
+                        else {str += " ";}
+                }
+                    else {
+                        str += doc1SO(tram) + " Trăm ";
+                    }
+                    if (chuc == 0 && donVi == 0) {
+                        str += " ";
+                    }
+                    if (chuc == 0 && donVi != 0) {
+                        str += "Linh ";
+                    }
+                    if (chuc == 1) {
+                        str += "Mười";
+                    }
+                    if (chuc != 1 && chuc != 0) {
+                        str += doc1SO(chuc) + " Mươi ";
+                    }
+                    if (donVi == 1) {
+                        str += "Mốt";
+                    }
+                    if (donVi == 0) {
+                        str += " ";
+                    }
+                    if (donVi!=1 && donVi!=0){
+                        str += doc1SO(donVi);
+                    }
+                }
+            return str;
+
+        }
+        function doc6So(n) {
+            let str="";
+            if (n<1000){
+                str= doc3So(n);
+            }
+            else {
+                let soNghin= Math.floor(n/1000);
+                let soTram= n%1000;
+                console.log(soTram);
+                let tramNghin= Math.floor(soNghin/100);
+                console.log(tramNghin);
+                let chucNghin= (Math.floor(soNghin/10)) %10;
+                console.log(chucNghin);
+                let hangNghin= soNghin%10;
+                console.log(hangNghin);
+                str = doc3So(soNghin) + " Nghìn " + doc3So(soTram);
+            }
+            return str;
+        }
+        function doc9So(n) {
+            let str="";
+            if (n>999999999) {alert("Không hợp lệ")}
+            else {
+                if (n<1000000){
+                    str=doc6So(n);
+                }
+                else {
+                    let soTrieu= Math.floor(n/1000000);
+                    console.log(soTrieu);
+                    let soTramNghin=n%1000000;
+                    console.log(soTramNghin);
+                    let tramTrieu= Math.floor(soTrieu/100);
+                    let chucTrieu= (Math.floor(soTrieu/10))%10;
+                    let hangTrieu= soTrieu%10;
+                    str = doc3So(soTrieu) + " Triệu " + doc6So(soTramNghin);
+                }
+                return str;
+            }
+        }
+        function docSo() {
+            let n;
+            n = prompt("Nhập một số có 9 chữ số");
+            n = Number.parseInt(n);
+            document.getElementById("Num3ToText").innerHTML = doc3So(n);
+            document.getElementById("Num6ToText").innerHTML = doc6So(n);
+            document.getElementById("Num6ToText").innerHTML = doc9So(n);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="docSo()"> Nhập số</button>
+    <p id="Num3ToText"></p>
+    <p id="Num6ToText"></p>
+</body>
+</html>

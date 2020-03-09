@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function tinhSoNgay() {
+            let thang = prompt("Nhap thang");
+            thang = Number.parseInt(thang);
+            let nam = prompt("Nhap nam");
+            nam = Number.parseInt(nam);
+
+            alert("thang " + thang + "/" + nam + " co " + tinhNgay(thang,nam) + " ngay");
+        }
+        function tinhNgay(thang,nam) {
+            switch (thang) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12: return 31;
+                case 4:
+                case 6:
+                case 9:
+                case 11: return 30;
+                case 2: if (kiemTraNamNhuan(nam))
+                            return 29;
+                        else
+                            return 28;
+                default: return "Khong phai thang hop le"
+            }
+
+        }
+        //Nam nhuan la nhung nam chia het cho 400 hoac chi het cho 4 nhung k chia het cho 100
+        function kiemTraNamNhuan(nam) {
+            return (nam % 400 ==0) || (nam%4==0 && nam%100 !=0);
+        }
+    </script>
+</head>
+<body>
+<!-- Nhap thang va nam roi cho biet thang do co bao nhieu ngay-->
+<button onclick="tinhSoNgay()"> Nhap thang</button>
+</body>
+</html>
