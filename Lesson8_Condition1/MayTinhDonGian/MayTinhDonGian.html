@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<table>
+    <tr>
+        <div class="Import">
+            <td colspan="4"><input type="text" id="InputScreen" disabled></td>
+        </div>
+    </tr>
+    <div class="button">
+        <tr>
+            <td>
+                <button type="button" value="1" onclick="ClickButton(this.value)"> 1</button>
+            </td>
+            <td>
+                <button type="button" value="2" onclick="ClickButton(this.value)"> 2</button>
+            </td>
+            <td>
+                <button type="button" value="3" onclick="ClickButton(this.value)"> 3</button>
+            </td>
+            <td>
+                <button type="button" value="+" onclick="ClickButton(this.value)"> +</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" value="4" onclick="ClickButton(this.value)"> 4</button>
+            </td>
+            <td>
+                <button type="button" value="5" onclick="ClickButton(this.value)"> 5</button>
+            </td>
+            <td>
+                <button type="button" value="6" onclick="ClickButton(this.value)"> 6</button>
+            </td>
+            <td>
+                <button type="button" value="-" onclick="ClickButton(this.value)"> -</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" value="7" onclick="ClickButton(this.value)"> 7</button>
+            </td>
+            <td>
+                <button type="button" value="8" onclick="ClickButton(this.value)"> 8</button>
+            </td>
+            <td>
+                <button type="button" value="9" onclick="ClickButton(this.value)"> 9</button>
+            </td>
+            <td>
+                <button type="button" value="*" onclick="ClickButton(this.value)"> x</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" value="C" onclick="Clear()"> C</button>
+            </td>
+            <td>
+                <button type="button" value="0" onclick="ClickButton(this.value)"> 0</button>
+            </td>
+            <td>
+                <button type="button" value="=" onclick="ClickButton(this.value)"> =</button>
+            </td>
+            <td>
+                <button type="button" value="/" onclick="ClickButton(this.value)"> /</button>
+            </td>
+        </tr>
+    </div>
+</table>
+
+<script>
+    let DisplayInput = document.getElementById("InputScreen");
+
+    function ClickButton(object) {
+        if (object == "=")
+            DisplayInput.value = eval(DisplayInput.value);
+        else
+            DisplayInput.value += object;
+    }
+
+    function Clear() {
+        DisplayInput.value = "";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img id="1" src="image/1.jpg" width="200px" alt="1" onclick="ChangeImage('1')">
+    <br>
+    <img id="2" src="image/2.jpg" width="200px" alt="2" onclick="ChangeImage('2')">
+    <br>
+    <img id="3" src="image/3.jpg" width="200px" alt="3" onclick="ChangeImage('3')">
+    <br>
+    <img id="4" src="image/4.jpg" width="200px" alt="4" onclick="ChangeImage('4')">
+    <br>
+<script>
+    function ChangeImage(index) {
+        let imgScr= document.getElementById(index);
+        let count = imgScr.alt;
+        count<4 ? count++ : count=1;
+            imgScr.src = "image/" + count +".jpg";
+            imgScr.alt = ""+ count;
+            checkImg();
+    }
+    function checkImg() {
+        let check1= document.getElementById("1"),
+            check2= document.getElementById("2"),
+            check3= document.getElementById("3"),
+            check4= document.getElementById("4");
+        console.log(check4.alt,check3.alt,check2.alt,check1.alt);
+        if ((check1.alt==check2.alt) && (check2.alt==check3.alt) && (check3.alt==check4.alt)){
+            alert("Bingo");
+        }
+
+    }
+</script>
+</body>
+</html>

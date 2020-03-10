@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*function calSum() {      //tổng của từ số m đến n
+            let m = document.getElementById("m");
+            m = Number.parseInt(m.value);
+            let n = document.getElementById("n");
+            n = Number.parseInt(n.value);
+
+            let s = 0, i;
+            for (i=m; i<=n;i++)
+                s += i;
+            document.getElementById("sum").innerHTML= "   " +s;
+            }*/
+        function calSumEvent() {
+            let m = document.getElementById("m");
+            m = Number.parseInt(m.value);
+            let n = document.getElementById("n");
+            n = Number.parseInt(n.value);
+            if (m>n){
+                max=m;
+                min=n;
+            }
+            else {
+                max=n;
+                min=m;
+            }
+
+            let s = 0, i;
+            for (i = min; i <= max; i++)
+                //if (i%2==0)   tính tổng số chẵn
+                // if (kiemtraChinhPhuong(i)) tính tổng số chính phương
+                if (CheckNguyenTo(i)){
+                    console.log((CheckNguyenTo(i)))
+                    s += i;
+                }
+
+            console.log(s);
+            document.getElementById("sum").innerHTML = "   " + s;
+        }
+
+        function kiemtraChinhPhuong(n) {
+            // Một số là số chính phương nếu giá trị căn bậc 2 của nó là số nguyên
+            return Number.isInteger(Math.sqrt(n));
+        }
+
+        function CheckNguyenTo(n) {
+            if (n<2) {
+                return false
+            }
+            else {
+                for (i = 2; i <= Number.parseInt(Math.sqrt(n)); i++) {
+                    if (n % i == 0) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+<!-- 1. Nhập hai số nguyên dương m và n. Tính tổng các giá trị từ m đến n
+2. Nhập hai số nguyên dương m và n. Tính tổng các giá trị chẵn từ m đến n
+3. Tính tổng các giá trị các số chính phương từ m đến n
+4. Tính tổng các giá trị các số nguyên tố từ m đến n-->
+
+<div>
+    <p> Nhap m: <input type="text" id="m" value="0" onkeyup="calSumEvent()"></p>
+    <p> Nhap n: <input type="text" id="n" value="0" onkeyup="calSumEvent()"></p>
+    <p> Tong la: <span id="sum"> 0</span></p>
+
+</div>
+</body>
+</html>

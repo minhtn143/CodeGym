@@ -1,0 +1,22 @@
+table{
+    border: black 3px solid;
+    border-collapse: collapse;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    padding: 50px 50px;
+}
+td{
+    margin: auto;
+    padding: 10px;
+    color: blue;
+}
+button{
+    width: 100px;
+    height: 80px;
+    font-size: large;
+}
+input{
+    color: blue;
+    font-size: large;
+}

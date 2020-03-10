@@ -13,5 +13,4 @@ function Clear(object) {
 function ClickEqual() {
     console.log(eval(DisplayInput));
     DisplayInput.value = eval(DisplayInput.value);
-
 }

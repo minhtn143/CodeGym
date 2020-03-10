@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /* Giải bài toán vừa gà vừa chó */
+        let soGa, soCho;
+        for (soGa = 0; soGa <= 36; soGa++)
+            for (soCho = 0; soCho <= 36; soCho++)
+                if ((soGa+soCho==36) &&(2 * soGa + 4 * soCho == 100)) {
+                    console.log("So ga la: " + soGa);
+                    console.log("So cho la: " + soCho);
+                }
+        /*Giải bài toán
+            Trăm trâu trăm cỏ
+            Cỏ bò trâu ăn
+            Trâu đứng ăn năm
+            Trâu nằm ăn ba
+            Trâu già ba con một bó
+            Tính số trâu mỗi loại
+        * */
+        /*Trau dung + trau nam + trau gia =100
+         trau dung 5 => toi da 20 trau dung
+         trau nam 3 => toi da 33 trau nam
+        * */
+        let TrauDung, TrauNam, TrauGia;
+        for (TrauDung=0; TrauDung<20;TrauDung++)
+            for (TrauNam=0; TrauNam<33; TrauNam++){
+                TrauGia= 100 - TrauDung - TrauNam;
+                Trau =TrauDung+TrauNam+TrauGia;
+                Co= 5*TrauDung+ 3*TrauNam+TrauGia/3;
+                if ((Trau==100) && (Co==100)){
+                    console.log("So Trau dung la: " + TrauDung);
+                    console.log("So Trau nam la: " + TrauNam);
+                    console.log("So Trau gia la: " + TrauGia);
+                }
+            }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

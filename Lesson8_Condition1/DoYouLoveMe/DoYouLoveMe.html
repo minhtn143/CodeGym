@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="position: absolute; left: 220px; top: 175px">DO YOU LOVE ME?</h1>
+<button id="Yes" type="button" onclick="sayYes()" style="position: absolute; left: 285px; top: 235px">YES</button>
+<button id="No" type="button" onmouseover="sayNo()" style="position: absolute; left: 360px; top: 235px">NO</button>
+<script>
+    function sayYes() {
+        alert("<3");
+    }
+
+    function sayNo() {
+        let jumpTop = Math.floor(Math.random() * window.innerHeight);
+        let jumpLeft = Math.floor(Math.random() * window.innerWidth);
+        console.log(jumpLeft, jumpTop, window.innerHeight, window.innerWidth);
+        let jump = document.getElementById("No");
+        jump.style.left = jumpLeft + "px";
+        jump.style.top = jumpTop + "px";
+    }
+</script>
+</body>
+</html>
