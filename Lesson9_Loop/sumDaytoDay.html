@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="SumDays()"> Enter</button>
+<script>
+    // Input
+    let FromDay = Number.parseInt(prompt("Enter from day")),
+        FromMonth = Number.parseInt(prompt("Enter from month")),
+        FromYear = Number.parseInt(prompt("Enter from year")),
+        ToDay = Number.parseInt(prompt("Enter to month")),
+        ToMonth = Number.parseInt(prompt("Enter to month")),
+        ToYear = Number.parseInt(prompt("Enter to year:"));
+
+    //tinh ngay
+    function countDayToDay() {
+
+    }
+    //check nam nhuan
+    function checkLeapYear(chk) {
+        let isLeapYear = false;
+        let isDivisibleBy4 = chk % 4 == 0;
+        if (isDivisibleBy4) {
+            let isDivisibleBy100 = chk % 100 == 0;
+            if (isDivisibleBy100) {
+                let isDivisibleBy400 = chk % 400 == 0;
+                if (isDivisibleBy400) {
+                    isLeapYear = true;
+                }
+            } else {
+                isLeapYear = true;
+            }
+        }
+    }
+
+    //    tinh so ngay trong thang
+    function DaysOfMonth(chkMonth,chkYear) {
+        switch (chkMonth) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                return 31;
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                return 30;
+                break;
+            case 2:
+                if (checkLeapYear(chkYear)){
+                    return 29;
+                    break;
+                }
+                else{
+                    return 28;
+                    break;
+                }
+            default:
+                return "Something Wrong"
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -17,12 +17,17 @@
     -->
 <script>
     let soQuyt, soCam;
-    for (soQuyt = 0; soQuyt <= 17; soQuyt++) {
+    /*for (soQuyt = 0; soQuyt <= 17; soQuyt++) {
         for (soCam = 0; soCam <= 17; soCam++) {
             if (soCam + soQuyt == 17 && 3 * soQuyt + 10 * soCam == 100) {
                 console.log(soQuyt);
                 console.log(soCam);
             }
+        }
+    }*/
+    for (soCam = 0; soCam <= 10; soCam++) {
+        if ((10 * soCam + 3 * (17 - soCam)) == 100) {
+            console.log('so cam' + soCam + 'so quyt' + (17 - soCam));
         }
     }
 </script>

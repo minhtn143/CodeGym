@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Good - Fast - Cheap</title>
+    <script>
+        let count=0;
+        function changeOther(index) {
+            count++;
+            if(count>2){
+                let idStr= "gfc_"+ index;
+                document.getElementById(idStr).checked =false;
+                count--;
+            }
+        }
+    </script>
+</head>
+<body>
+<label for="gfc_1"><input type="checkbox" id="gfc_1" onclick="changeOther(2)"> Good</label>
+<label for="gfc_2"><input type="checkbox" id="gfc_2" onclick="changeOther(3)"> Fast</label>
+<label for="gfc_3"><input type="checkbox" id="gfc_3" onclick="changeOther(1)"> Cheap</label>
+</body>
+</html>

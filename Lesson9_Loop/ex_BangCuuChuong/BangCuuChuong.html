@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bang Cuu Chuong</title>
+</head>
+<body>
+<script>
+    let drawTable;
+    drawTable = "<table width='900px' border='solid' >";
+    for (i = 2; i < 10; i++) {
+        drawTable = drawTable + "<tr>";
+        for (j = 1; j < 10; j++) {
+            tich = i * j;
+            drawTable = drawTable + "<td>" + i + "x" + j + "=" + tich;
+        }
+        drawTable = drawTable + "</tr>";
+    }
+    drawTable = drawTable + "</table>";
+    document.write(drawTable);
+</script>
+</body>
+</html>
