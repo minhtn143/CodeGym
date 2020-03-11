@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fbac055-1602-4e67-b3be-a360219faf03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Lesson8_Condition2/Ex_Condition01/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Lesson8_Condition2/Ex_Condition01/.idea/Ex_Condition01.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Lesson8_Condition2/Ex_Condition01/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Lesson8_Condition2/Ex_Condition01/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Lesson8_Condition2/Ex_Condition01/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Lesson8_Condition2/Ex_Condition01/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Lesson8_Condition2/Ex_Condition01/Bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Lesson8_Condition2/appGoodFastCheap/.idea/appGoodFastCheap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Lesson8_Condition2/appGoodFastCheap/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Lesson8_Condition2/appGoodFastCheap/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Lesson8_Condition2/appGoodFastCheap/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Lesson8_Condition2/appGoodFastCheap/GoodFastCheap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Practice_CheckYear/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Practice_CheckYear/.idea/Practice_CheckYear.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Practice_CheckYear/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Practice_CheckYear/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Practice_CheckYear/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson8_Condition1/Practice_CheckYear/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BangCuuChuong/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice_Loop1/sumDaytoDay1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ex_20PrimeNumber.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimeNumber.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex_BangCuuChuong/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex_BangCuuChuong/.idea/ex_BangCuuChuong.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex_BangCuuChuong/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex_BangCuuChuong/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex_BangCuuChuong/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex_BangCuuChuong/BangCuuChuong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sumDaytoDay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bai9_LoopFor.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Bai9_LoopFor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_Quick1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Test_Quick1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeNumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeNumber.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583915788340</updated>
-      <workItem from="1583915790157" duration="1927000" />
+      <workItem from="1583915790157" duration="2385000" />
     </task>
     <servers />
   </component>
