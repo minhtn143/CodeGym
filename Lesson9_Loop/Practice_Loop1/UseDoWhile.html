@@ -5,6 +5,21 @@
     <title>Title</title>
 </head>
 <body>
+    <script>
+        let value=null;
+        do{
+            value=prompt("Nhập vào số từ 1 đến 10: ");
+            if (value<1 || value>10) {alert("Retry")}
+        }
+        while (value<1 || value>10);
+        alert("Số bạn vừa nhập là: "+ value);
 
+        let count = 0;
+        do {
+            count++;
+            console.log(count);
+        } while (count++ < 10);
+        console.log(count);
+    </script>
 </body>
 </html>

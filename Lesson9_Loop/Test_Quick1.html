@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<!-- Quýt ngon mỗi người chia ba
+    Cam ngon mỗi quả chia mười
+    Mỗi người một miếng trăm người
+    Có mười bảy quả không nhiều đồ chia
+    Tính số cam, quýt
+-->
+
+<!--soQuyt  + soCam = 17
+    3*soQuyt + 10*soCam = 100
+    -->
+<script>
+    let soQuyt, soCam;
+    for (soQuyt = 0; soQuyt <= 17; soQuyt++) {
+        for (soCam = 0; soCam <= 17; soCam++) {
+            if (soCam + soQuyt == 17 && 3 * soQuyt + 10 * soCam == 100) {
+                console.log(soQuyt);
+                console.log(soCam);
+            }
+        }
+    }
+</script>
 </body>
 </html>
