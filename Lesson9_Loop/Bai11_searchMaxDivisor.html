@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính ước số chung lớn nhất của 2 s</title>
+</head>
+<body>
+<!-- Nhập 2 số nguyên dương a và b tính ước số chung lớn nhất của a,b-->
+    <button type="button" onclick="action()"> Enter</button>
+
+    <script>
+        function action() {
+            let a = +prompt("Enter number 1: ");
+            let b = +prompt("Enter number 2: ");
+            alert("Max Divisor" + search(a,b));
+        }
+        function search(a,b) {
+            while (a!=b) {
+                if (a>b){
+                    a-=b;
+                }
+                else {
+                    b-=a;
+                }
+            }
+            return a;
+
+        }
+    </script>
+</body>
+</html>

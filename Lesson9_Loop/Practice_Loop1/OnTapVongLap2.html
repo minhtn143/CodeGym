@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        numA= +prompt("Enter number 1: ");
+        numB= +prompt("Enter number 2: ");
+        let sumAB =0;
+        if (numA<numB){
+            for (i=numA;i<=numB;i++){
+                if (i%2==0){
+                    sumAB+=i;
+                    console.log(sumAB);
+                }
+            }
+        }
+        else {
+            for (i = numB; i <= numA; i++) {
+                if (i % 2 == 0) {
+                    sumAB += i;
+                    console.log(sumAB);
+                }
+            }
+        }
+        document.write(sumAB);
+
+    </script>
+</body>
+</html>

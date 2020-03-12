@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Nhập 1 số nguyên dương và tính tổng các chữ số chẵn của nó -->
+<button onclick="outResult()">Enter</button>
+
+<script>
+    function sumDigits(n) {
+        let sum = 0;
+        while (n > 0) {
+            if ((n % 10) % 2 == 0) {
+                sum += n % 10;
+            }
+            n = Math.floor(n / 10);
+            console.log(sum);
+        }
+        return sum;
+
+    }
+
+    function outResult() {
+        let n = +prompt("Enter number: ");
+        alert("Result= " + sumDigits(n));
+    }
+</script>
+</body>
+</html>

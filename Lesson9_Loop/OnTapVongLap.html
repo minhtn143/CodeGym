@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--ve hinh chu nhat
+************
+*          *
+*          *
+*          *
+*          *
+************
+-->
+<script>
+    let iWitdh = +prompt("Enter witdh"),
+        iHeight = +prompt("Enter Height"),
+        drawRetangle = "<table style='border: 0px' width='300' cellspacing='0' cellpadding='3'>";
+    for (i = 0; i < iHeight; i++) {
+        drawRetangle+="<tr>";
+        for (j = 0; j < iWitdh; j++) {
+            drawRetangle+="<td>";
+            if (i==0 || i==(iHeight-1) || j==0 || j==iWitdh-1){
+                drawRetangle+="*";
+            }
+            else{
+                drawRetangle += "&nbsp;&nbsp;";}
+            drawRetangle+="</td>";
+        }
+        drawRetangle += "</tr>";
+    }
+    document.write(drawRetangle);
+</script>
+</body>
+</html>
