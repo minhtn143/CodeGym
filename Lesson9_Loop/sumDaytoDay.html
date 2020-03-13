@@ -6,13 +6,23 @@
 </head>
 <body>
 From
-<input id="fromDate" type="date" value="Enter mm/dd/yyyy">
+<input id="fromDate" type="date" placeholder="Enter mm/dd/yyyy">
 <br>
 To
-<input type="toDate" value="Enter mm/dd/yyyy">
-<button onclick="SumDays()"> Enter</button>
+<input id="toDate" type="date" placeholder="Enter mm/dd/yyyy">
+<br>
+<button onclick="Test()"> Enter</button>
 <script>
+    function Test() {
+        let x= new Date(document.getElementById("fromDate").value);
+        let y= new Date(document.getElementById("toDate").value);
+        console.log("x,y= "+x,y);
+        let z = x.getDate();
+        let v = y.getDate();
+        console.log(z,v);
 
+
+    }
     //tinh ngay
     function countDayToDay() {
 

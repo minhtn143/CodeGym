@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        * Nhan so phan tu cua mang
+        * sinh ngau nhien mang
+        * tinh tong cac phan tu cua mang
+        * */
+
+        /*Bài tập:
+        * 1. tính tổng các số chẵn, số lẻ, số chính phương, số nguyên tố của mảng
+        * 2. sắp xếp mảng theo thứ tự tăng dần
+        * 3**. sắp xếp mảng sao cho các số lẻ tăng dần và các số chẵn giảm dần*/
+        let count = 0;
+        let randomArray= new Array();
+
+
+        initArray();
+        displayArray();
+        console.log("Result=" + sumArray());
+
+        function initArray() {
+            count= +prompt("Enter lenght of array");
+            for(let i=0; i<count; i++)
+                randomArray.push(Math.round(1000*Math.random()));
+        }
+
+        function displayArray() {
+            for (let i=0; i<randomArray.length; i++)
+                console.log(randomArray[i]);
+        }
+
+        function sumArray() {
+            let sum=0;
+            for(let i=0; i<randomArray.length; i++)
+                    sum+= randomArray[i];
+            return sum;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

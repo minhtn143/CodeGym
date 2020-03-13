@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thay đổi chữ HOA - chữ thường</title>
+</head>
+<body>
+<script>
+    inputstr = prompt("Input something; ");
+    let UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let LOWER = "abcdefghijklmnopqrstuvwxyz";
+    let outputstr = [];
+
+    for (let i = 0; i < inputstr.length; i++) {
+        if (UPPER.indexOf(inputstr[i]) !== -1) { //kiem tra co trung voi UPPER ko, neu co thi doi thanh chu thuong
+            outputstr.push(inputstr[i].toLowerCase());
+        } else if (LOWER.indexOf(inputstr[i]) !== -1) {  //kiem tra co trung voi LOWER ko, neu co thi doi thanh chu hoa
+            outputstr.push(inputstr[i].toUpperCase());
+        } else { //ko phai hoa thuong thi giu nguyen, add vao mang output
+            outputstr.push(inputstr[i]);
+        }
+    }
+    console.log(outputstr.join(''));
+</script>
+</body>
+</html>

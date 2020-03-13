@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        drawTable = "<table border='1px' onclick='changeValue()'>";
+        for (i=1;i<4;i++){
+            drawTable+= "<tr>";
+            for (j=1;j<4;j++){
+                drawTable+= "<td id='location" + i + "_" +j+"'>";
+                drawTable+= "....";
+                drawTable+= "</td>";
+            }
+            drawTable+="</tr>";
+        }
+        document.write(drawTable);
+
+        function changeValue() {
+            let positionX = prompt("X: ");
+            let positionY = prompt("Y: ");
+            data = "";
+            board[positionX][positionY] = "x";
+            for (let i = 0; i < 5; i++) {
+                data += "<br/>";
+                for (let j = 0; j < 5; j++) {
+                    data += board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;";
+                }
+            }
+            data += "<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>";
+            b.innerHTML = "<hr/>" + data;
+        }
+    </script>
+</body>
+</html>

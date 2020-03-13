@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td> Nhập từ cần tìm kiềm:</td>
+        <td><input id="enginput" type="text"></td>
+    </tr>
+    <tr>
+        <td>Kết quả:</td>
+        <td><input id="vnoutput" type="text" disabled></td>
+    </tr>
+</table>
+
+<br>
+<button type="button" onclick="trans()">Translate</button>
+<button type="button" onclick="clear()"> Reset</button>
+
+<script>
+    let eng = ['top', 'bottom', 'left', 'right', 'up', 'down'],
+        vnm = ['trên', 'dưới', 'trái', 'phải', 'lên', 'xuống'];
+
+    function trans() {
+        let check = document.getElementById("enginput").value;
+
+        for (let i = 0; i < eng.length; i++) {
+            if (eng[i]== check) {
+                document.getElementById("vnoutput").value = vnm[i];
+                break;
+            } else{
+                document.getElementById('vnoutput').value = 'Not found';
+            }
+        }
+    }
+
+    function clear() {
+        document.getElementById('enginput').value = "";
+        document.getElementById("vnoutput").value = "";
+    }
+</script>
+</body>
+</html>
