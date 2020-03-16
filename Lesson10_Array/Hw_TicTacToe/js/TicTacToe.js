@@ -1,16 +1,15 @@
 let drawTable = "<table border='1px'>";
 let myBoard = [];
-let PLAYED = 0;
+let PLAYED = 1;
 let isGameOver = false;
 
 function creatBoard() {
     nRow = +prompt("Enter Row:");
     nColumn = +prompt("Enter Column:");
 
-    if (nRow<5||nColumn<5){
+    if (nRow < 5 || nColumn < 5) {
         alert("Number of Row and Column must be gearter than 5");
-    }
-    else {
+    } else {
         let i, j;
 
         for (i = 0; i < nRow; i++) {
@@ -26,8 +25,13 @@ function creatBoard() {
         document.write(drawTable);
     }
 }
+
 //choi
 function play(cell, x, y) {
+    if (isGameOver) {
+        return
+    }
+
     if (!cell.innerHTML) {
         switch (PLAYED) {
             case 1:
@@ -36,66 +40,102 @@ function play(cell, x, y) {
                 cell.innerHTML = "X";
                 break;
             case 2:
-                myBoard[x][y] = "";
+                myBoard[x][y] = "O";
                 PLAYED = 1;
                 cell.innerHTML = "O";
                 break;
-            default:
-                myBoard[x][y] = "X";
-                PLAYED = 2;
-                cell.innerHTML = "X";
-                break;
         }
+        checkWin(cell, x, y);
     }
-   // kiem tra dieu kien thang
-    checkWin(cell,x,y);
-}
-
-function checkWin(cell,x,y){
-    checkRow(cell,x,y);
-    checkColumn(cell,x,y);
+    // kiem tra dieu kien thang
 
 }
 
-function checkRow(cell,x,y) {
-    let i=1;
-    let j=1;
-    let count=1;
-    while ((y+i)<nColumn&&myBoard[x][y+1]===cell.innerHTML){
+function checkWin(cell, x, y) {
+
+    checkRow(cell, x, y);
+    checkColumn(cell, x, y);
+    checkDiagonalLinesRight(cell, x, y);
+    checkDiagonalLinesLeft(cell, x, y);
+    if (isGameOver) {
+        alert("GAME OVER");
+    }
+
+}
+
+function checkRow(cell, x, y) {
+    let i = 1;
+    let j = 1;
+    let count = 1;
+    while ((y + i) < nColumn && myBoard[x][y + i] === cell.innerHTML) {
         i++;
         count++;
     }
-    while ((y-j)>=0 && myBoard[x][y-j]===cell.innerHTML){
+    while ((y - j) >= 0 && myBoard[x][y - j] === cell.innerHTML) {
         j++;
         count++;
     }
     gameOver(count);
+    console.log("ngang" + count);
 }
 
-function checkColumn(cell,x,y) {
-    let i=1;
-    let j=1;
-    let count=1;
-    while ((x+i)<nRow&&myBoard[x+1][y]===cell.innerHTML){
+function checkColumn(cell, x, y) {
+    let i = 1;
+    let j = 1;
+    let count = 1;
+    while ((x + i) < nRow && myBoard[x + i][y] === cell.innerHTML) {
         i++;
         count++;
     }
-    while ((x-j)>=0 && myBoard[x-1][y]===cell.innerHTML){
+    while ((x - j) >= 0 && myBoard[x - j][y] === cell.innerHTML) {
         j++;
         count++;
     }
     gameOver(count);
+    console.log("doc" + count);
 }
 
-function checkDiagonalLines(cell,x,y) {
+function checkDiagonalLinesRight(cell, x, y) {
+    let i = 1;
+    let j = 1;
+    let count = 1;
+    while ((x + i) < nRow && (y + i) < nColumn && (myBoard[x + i][y + i] === cell.innerHTML)) {
+        i++;
+        count++;
+    }
+    // gameOver(count);
 
+    while ((x - j) >= 0 && (y - j) >= 0 && (myBoard[x - j][y - j] === cell.innerHTML)) {
+        j++;
+        count++;
+    }
+    gameOver(count);
+    console.log("phai" + count);
+}
 
+function checkDiagonalLinesLeft(cell, x, y) {
+    let i = 1;
+    let j = 1;
+    let count = 1;
+    while ((x + i) < nRow && (y - i) >= 0 && (myBoard[x + i][y - i] === cell.innerHTML)) {
+        i++;
+        count++;
+    }
+    // gameOver(count);
+
+    while ((x - j) >= 0 && (y + j) <= nColumn && (myBoard[x - j][y + j] === cell.innerHTML)) {
+        j++;
+        count++;
+    }
+    gameOver(count);
+
+    console.log("trai" + count);
 }
 
 function gameOver(count) {
-    if (count===5){
-        alert("GAME OVER");
+    if (count >= 5) {
         isGameOver = true;
+        return true;
     }
 
 }
