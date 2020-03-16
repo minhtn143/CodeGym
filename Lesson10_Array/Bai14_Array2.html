@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+        1. Nhập số phần tử mỗi chiều của mảng 2 chiều
+        2. khởi tạo giá trị cho mảng
+        3. Hiện mảng rồi tính tổng hảng/cột
+        4. Tìm tổng các giá trị chẵn lẻ, chính phương, nguyên tố
+        5. Sắp xếp mảng theo chiều từ trái qua phải,  trên xuống dưới
+        6. Sắp xếp mảng theo tổng hàng, tổng cột
+    -->
+
+    <script>
+        let myArray;
+        let nRow, nColumn;
+
+
+        function initArray() {
+            nRow = +prompt("Nhap so dong:");
+            nColumn = +prompt("Nhap so cot");
+
+            myArray = new Array(nRow);
+            for (let i = 0; i < nRow; i++) {
+                myArray[i] = new Array(nColumn);
+                for (let j = 0; j < nColumn; j++) {
+                    myArray[i][j] = Math.round(Math.random() * 1000);
+                }
+            }
+        }
+
+        function showArray() {
+            let i, j;
+            document.write("<table border='1'>");
+            for (i = 0; i < nRow; i++) {
+                document.write("<tr>");
+                for (j = 0; j < nColumn; j++) {
+                    document.write("<td " + (((i + j) % 2 == 1) ? "style='background-color: white'> " : "style='background-color: yellow'>") + myArray[i][j] + "</td>");
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        }
+        function sortArrayLeftToRight() {
+            myArray().sort();
+            console.log(myArray);
+        }
+
+        function calRowSum(rowIndex) {
+            if (rowIndex <= 0 || rowIndex >= nRow)
+                return 0;
+
+            let sum = 0;
+            for (let j = 0; j < nColumn; j++) {
+                sum += myArray[rowIndex][j];
+            }
+            return sum;
+        }
+
+        function calColumnSum(columnIndex) {
+            if (columnIndex <= 0 || columnIndex >= nColumn)
+                return 0;
+
+            let sum = 0;
+            for (let i = 0; i < nRow; i++) {
+                sum += myArray[columnIndex][i];
+            }
+            return sum;
+        }
+
+        function calEvenValueSum() {
+            let i, j;
+            let sum = 0;
+
+            for (i = 0; i < nRow; i++) {
+                for (j = 0; j < nColumn; j++) {
+                    if (myArray[i][j] % 2 == 0) {
+                        sum += myArray[i][j]
+                    }
+                }
+            }
+            return sum;
+        }
+
+
+        function calOddValueSum() {
+            let i, j;
+            let sum = 0;
+
+            for (i = 0; i < nRow; i++) {
+                for (j = 0; j < nColumn; j++) {
+                    if (myArray[i][j] % 2 != 0) {
+                        sum += myArray[i][j]
+                    }
+                }
+            }
+            return sum;
+        }
+
+        function calPrimeValueSum() {
+            let i, j;
+            let sum = 0;
+
+            for (i = 0; i < nRow; i++) {
+                for (j = 0; j < nColumn; j++) {
+                    if (checkPrime(myArray[i][j])){
+                        sum+=myArray[i][j];
+                        console.log("So nguyen to: " + myArray[i][j]);
+                    }
+                }
+            }
+            return sum;
+        }
+
+        function checkPrime(n) {
+                for (i = 2; i <= Number.parseInt(Math.sqrt(n)); i++) {
+                    if (n % i == 0) {
+                        return false;
+                    }
+                }
+            return true;
+        }
+
+        function calSquareRootValueSum() {
+            let i, j;
+            let sum = 0;
+
+            //dieu kien so chinh phuong
+
+            for (i = 0; i < nRow; i++) {
+                for (j = 0; j < nColumn; j++) {
+                    let SquareRoot = Number.isInteger(Math.sqrt(myArray[i][j]));
+                    if (SquareRoot) {
+                        sum += myArray[i][j];
+                        console.log("so chinh phuong: " + myArray[i][j]);
+                    }
+                }
+            }
+            return sum;
+        }
+
+
+        initArray();
+        showArray();
+        document.write("Tong hang 1 la " + calRowSum(1) + "<br>");
+        document.write("Tong cot 2 la " + calColumnSum(2) + "<br>");
+        document.write("Tong ca so chan la " + calEvenValueSum() + "<br>");
+        document.write("Tong ca so chan la " + calOddValueSum() + "<br>");
+        document.write("Tong ca so chinh phuong la " + calSquareRootValueSum() + "<br>");
+        document.write("Tong ca so nguyen to la " + calPrimeValueSum() + "<br>");
+
+        sortArrayLeftToRight();
+        showArray();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

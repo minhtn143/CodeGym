@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        let myArray=['L','o','v','e',' ', 'Y','o','u','!'];
+
+        function action() {
+            let input=document.getElementById("Input").value;
+            let lengthInput = input.length;
+            let newoutput=[];
+
+            if (lengthInput>0){
+                for (i=0; i<=lengthInput-1;i++){
+                    newoutput+= myArray[i];
+                    if (i==9){
+                        document.getElementById("Input").value="";
+                        newoutput="";
+                    }
+                }
+            }
+            document.getElementById("Input").value= newoutput;
+            newoutput="";
+            setTimeout("action()",1);
+
+        }
+    </script>
+</head>
+<body>
+    <h1>TYPE ANYTHING SLOWLY</h1>
+    <textarea id="Input" cols="50" rows="10" onkeydown="action()"></textarea>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--    In ra tich lon nhat cua 2 phan tu lien ke cua mang array-->
+
+<script>
+
+    let array = [-3, 4, -5, 2, -11, 23];
+
+    for (let i = 0; i < array.length; i++) {
+        let mutil = array[i] * array[i + 1],
+            max=array[0] * array[1];
+        if (mutil > max) {
+            max = mutil;
+        }
+    }
+    console.log(max);
+</script>
+</body>
+</html>
