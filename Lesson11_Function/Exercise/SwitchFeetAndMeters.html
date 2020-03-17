@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch Feet and Meters</title>
+    <script>
+        function footToMeter(inputFoot) {
+            let outputMeter = Number(inputFoot)*0.305;
+            document.getElementById("outputMeter").innerText= outputMeter;
+        }
+
+        function meterToFoot(inputMeter) {
+            let outputFoot = Number(inputMeter)*3.279;
+            document.getElementById("outputFoot").innerText= outputFoot;
+        }
+    </script>
+</head>
+<body>
+    <p>
+        <label>Foot</label>
+        <input id="inputFoot" type="number" placeholder="Foot"
+           oninput="footToMeter(this.value)"
+           onchange="footToMeter(this.value)">
+    </p>
+    <p>Meter: <span id="outputMeter" aria-disabled="true"></span></p><p>
+        <br>
+        <label>Meters</label>
+        <input id="inputMeter" type="number" placeholder="Meters"
+           oninput="meterToFoot(this.value)"
+           onchange="meterToFoot(this.value)">
+    </p>
+    <p>Foot: <span id="outputFoot" aria-disabled="true"></span></p>
+</body>
+</html>

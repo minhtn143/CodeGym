@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Function</title>
+    <script>
+        //Viết hàm tính giai thừa của 1 số nguyên dương
+
+        /*Hàm tính giá trị giai thừa
+        * Input: n
+        * Output: n!
+        * Thuật toán không đệ quy*/
+
+        function calFactorial(n) {
+            let s = 1;
+            for (let i = 1; i <= n; i++) {
+                s *= i;
+            }
+            return s;
+        }
+
+        /*Hàm tính giá trị giai thừa
+        * Input: n
+        * Output: n!
+        * Thuật toán đệ quy*/
+
+        function calFactorialRec(n) {
+            if (n == 1)
+                return 1;
+            else
+                return n * calFactorialRec(n - 1);
+        }
+
+        function main() {
+            let n = +prompt("Enter 1 number: ");
+            alert("Value off Factorial: " + calFactorial(n));
+            alert("Value off Factorial Rec: " + calFactorialRec(n));
+
+        }
+
+        main();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
