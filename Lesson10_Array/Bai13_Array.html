@@ -21,6 +21,7 @@
         initArray();
         displayArray();
         console.log("Result=" + sumArray());
+        sortAscending();
 
         function initArray() {
             count= +prompt("Enter lenght of array");
@@ -37,11 +38,18 @@
             let sum=0;
             for(let i=0; i<randomArray.length; i++){
                 if (randomArray[i]%2==0){
-                sum+= randomArray[i];}
+                sum+= randomArray[i];};
+            }
             return sum;
         }
-
-
+        
+        function compare(a,b) {
+            return a-b;
+        }
+        
+        function sortAscending() {
+            newArray= randomArray.sort(compare);
+            console.log(newArray);
         }
     </script>
 </head>

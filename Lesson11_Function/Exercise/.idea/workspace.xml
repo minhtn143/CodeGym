@@ -2,26 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74ad2d69-1098-4d00-992e-a3627216005a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Exercise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CheckPrime.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SwitchFeetAndMeters.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/.idea/Practice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/Bai16_Function.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/CreatAndCallFunction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/FindMinInArray.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/TemperatureSwitch.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeCreatUseArray1/Bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeCreatUseArray1/Bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeCreatUseArray1/Bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeCreatUseArray1/Bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeCreatUseArray1/Bai5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeCreatUseArray2/Index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeCreatUseArray2/js/myjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lesson12_Object/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lesson12_Object/.idea/Lesson12_Object.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lesson12_Object/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lesson12_Object/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lesson12_Object/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lesson12_Object/Bai17_OOP_demo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lesson10_Array/Bai13_Array.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesson10_Array/Bai13_Array.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lesson10_Array/Bai14_Array2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesson10_Array/Bai14_Array2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lesson10_Array/Hw_TicTacToe/js/app_fix.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesson10_Array/Hw_TicTacToe/js/app_fix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/CreatAndCallFunction.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/CreatAndCallFunction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/FindMinInArray.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/FindMinInArray.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/TemperatureSwitch.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/TemperatureSwitch.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -63,7 +64,8 @@
       <option name="presentableId" value="Default" />
       <updated>1584420196418</updated>
       <workItem from="1584420198970" duration="1965000" />
-      <workItem from="1584428505741" duration="1084000" />
+      <workItem from="1584428505741" duration="22998000" />
+      <workItem from="1584498847790" duration="5995000" />
     </task>
     <servers />
   </component>
@@ -71,9 +73,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1219" y="288" key="FileChooserDialogImpl" timestamp="1584429350085">
+    <state x="1219" y="288" key="FileChooserDialogImpl" timestamp="1584498957101">
       <screen x="0" y="28" width="1920" height="1005" />
     </state>
-    <state x="1219" y="288" key="FileChooserDialogImpl/0.28.1920.1005@0.28.1920.1005" timestamp="1584429350085" />
+    <state x="1219" y="288" key="FileChooserDialogImpl/0.28.1920.1005@0.28.1920.1005" timestamp="1584498957101" />
   </component>
 </project>

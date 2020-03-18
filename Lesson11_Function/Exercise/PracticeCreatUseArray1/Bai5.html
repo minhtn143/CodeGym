@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let NameStarLatin = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let NameStarEng = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+        function main() {
+            let nameStar=prompt("Please enter star name: ");
+            findStarName(nameStar);
+
+        }
+        function findStarName(name){
+            for (let i=0;i<NameStarLatin.length;i++){
+                if (name===NameStarLatin[i]){
+                    alert(NameStarEng[i]);
+                    return NameStarEng[i];
+                }
+            }
+            alert("Not Found " + name);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="main()">Press Here</button>
+</body>
+</html>

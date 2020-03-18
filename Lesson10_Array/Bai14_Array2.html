@@ -42,8 +42,31 @@
             }
             document.write("</table>");
         }
+
+
         function sortArrayLeftToRight() {
-            myArray().sort();
+            for (let i = 0; i < nRow; i++) {
+                myArray[i].sort(function (a,b){return a-b;})
+            }
+            console.log(myArray);
+        }
+
+        function swap(array,a,b) {
+            let temp="";
+            temp=array[a];
+            array[a]=array[b];
+            array[b]=temp;
+        }
+
+        function sortArrayTopToBottom() {
+            for (let i=0;i<nRow;i++){
+                for (let j = 0; j < nColumn; j++) {
+                    if(myArray[i][j]>myArray[i][j+1]){
+                        swap(myArray,i,j)
+                    }
+                }
+            }
+
             console.log(myArray);
         }
 
@@ -152,6 +175,9 @@
 
         sortArrayLeftToRight();
         showArray();
+        sortArrayTopToBottom();
+        showArray();
+
     </script>
 </head>
 <body>

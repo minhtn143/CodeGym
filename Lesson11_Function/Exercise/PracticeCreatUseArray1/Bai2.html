@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function increaseNumber(n) {
+            n++;
+            document.getElementById("show").innerHTML=n;
+        }
+    </script>
+</head>
+<body>
+    <input type="number" onchange="increaseNumber(this.value)">
+    <p id="show"></p>
+</body>
+</html>
