@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4c595e26-3a7c-4098-a701-a0a8dca6a8ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/StudentInformation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/myJs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bai17_OOP_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Bai17_OOP_demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BuildClassMobile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BuildClassMobile/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BuildClassMobile/myJs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BuildClassMobile/myJs.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1ZJL0eYDVJo6UAcAR3UOusWzdwE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c595e26-3a7c-4098-a701-a0a8dca6a8ca" name="Default Changelist" comment="" />
+      <created>1584552028223</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584552028223</updated>
+      <workItem from="1584552030256" duration="2260000" />
+      <workItem from="1584586615771" duration="91000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1219" y="288" key="FileChooserDialogImpl" timestamp="1584586700698">
+      <screen x="0" y="28" width="1920" height="1005" />
+    </state>
+    <state x="1219" y="288" key="FileChooserDialogImpl/0.28.1920.1005@0.28.1920.1005" timestamp="1584586700698" />
+  </component>
+</project>

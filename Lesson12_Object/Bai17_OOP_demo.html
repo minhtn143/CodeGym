@@ -14,21 +14,21 @@
         * Tích hợp bài thực hành trên với bài số 3.
         * Xây dựng các lớp cho giao diện qly sản phẩm.
         * */
-        function Studen(studentID, firstName, lastName, className, mathScore, phyScore, cheScore) {
+        function Studen(studentID, firstName, lastName, className, mathScore, phyScore, chemScore) {
             this.firstName = firstName;
             this.lastName = lastName;
             this.studentID = studentID;
             this.className = className;
             this.mathScore = mathScore;
             this.phyScore = phyScore;
-            this.cheScore = cheScore;
+            this.chemScore = chemScore;
 
             this.getStudent = function () {
                 return this.studentID;
             }
 
             this.getAverageScore = function () {
-                return (this.mathScore + this.cheScore + this.phyScore) / 3;
+                return (this.mathScore + this.chemScore + this.phyScore) / 3;
             }
             this.show = function () {
                 document.write("StudentID: " + this.studentID + "<br>");
@@ -36,7 +36,7 @@
                 document.write("Class: " + this.className + "<br>");
                 document.write("Math: " + this.mathScore + "<br>");
                 document.write("Phy: " + this.phyScore + "<br>");
-                document.write("Chemiscal: " + this.cheScore + "<br>");
+                document.write("Chemiscal: " + this.chemScore + "<br>");
                 document.write("Average Score: <b>" + this.getAverageScore() + "</b><br>");
             }
         }
@@ -53,9 +53,9 @@
                     let className = "C02020" + Math.random().toString(36).substring(10);
                     let mathScore = Math.floor(Math.random()*10);
                     let phyScore = Math.floor(Math.random()*10);
-                    let cheScore = Math.floor(Math.random()*10);
+                    let chemScore = Math.floor(Math.random()*10);
 
-                    let student = new Studen(studentID,firstName,lastName,className,mathScore,phyScore,cheScore);
+                    let student = new Studen(studentID,firstName,lastName,className,mathScore,phyScore,chemScore);
                     this.studentList[i]=student;
                 }
             }

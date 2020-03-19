@@ -2,63 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55fe73e8-be51-4c87-99f3-23c7e394e390" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Lesson11_Function/Exercise/PracticeCreatUseArray1/Bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson11_Function/Exercise/PracticeCreatUseArray1/Bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson11_Function/Exercise/PracticeCreatUseArray1/Bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson11_Function/Exercise/PracticeCreatUseArray1/Bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson11_Function/Exercise/PracticeCreatUseArray1/Bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson11_Function/Exercise/PracticeCreatUseArray2/Index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lesson11_Function/Exercise/PracticeCreatUseArray2/js/myjs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/Lesson12_Object.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai17_OOP_demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassCircle/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassCircle/.idea/BuildClassCircle.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassCircle/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassCircle/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassCircle/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassCircle/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassCircle/js/myJs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassDate/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassDate/.idea/BuildClassDate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassDate/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassDate/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassDate/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassDate/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassDate/js/myjs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myJs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassTemperature/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassTemperature/.idea/BuildClassTemperature.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassTemperature/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassTemperature/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassTemperature/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassTemperature/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildClassTemperature/js/myJs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildObjRectange/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildObjRectange/.idea/BuildObjRectange.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildObjRectange/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildObjRectange/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildObjRectange/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildObjRectange/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BuildObjRectange/js/myJs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FunnyCircle/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FunnyCircle/.idea/FunnyCircle.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FunnyCircle/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FunnyCircle/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FunnyCircle/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FunnyCircle/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FunnyCircle/js/myJs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesson10_Array/Bai13_Array.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesson10_Array/Bai13_Array.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesson10_Array/Bai14_Array2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesson10_Array/Bai14_Array2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesson10_Array/Hw_TicTacToe/js/app_fix.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesson10_Array/Hw_TicTacToe/js/app_fix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesson11_Function/Exercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesson11_Function/Exercise/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesson11_Function/Practice/CreatAndCallFunction.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesson11_Function/Practice/CreatAndCallFunction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesson11_Function/Practice/FindMinInArray.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesson11_Function/Practice/FindMinInArray.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lesson11_Function/Practice/TemperatureSwitch.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesson11_Function/Practice/TemperatureSwitch.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bai18_OOP-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentInformation/.idea/StudentInformation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentInformation/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentInformation/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentInformation/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentInformation/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentInformation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentInformation/js/myJs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bai17_OOP_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Bai17_OOP_demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myJs.js" beforeDir="false" afterPath="$PROJECT_DIR$/myJs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +42,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -98,11 +54,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584543018149</updated>
-      <workItem from="1584543019994" duration="4639000" />
+      <workItem from="1584543019994" duration="11041000" />
+      <workItem from="1584602994751" duration="4569000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="216" y="445" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584548555820">
+      <screen x="0" y="28" width="1920" height="1005" />
+    </state>
+    <state x="216" y="445" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.28.1920.1005@0.28.1920.1005" timestamp="1584548555820" />
   </component>
 </project>

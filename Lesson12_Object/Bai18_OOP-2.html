@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--    1. cho biết hôm nay là thứ mấy tiếng việt
+        2. Nhập một xâu ký tự và chuẩn hóa xâu:
+        - Không có ký tự trống ở đầu và cuối câu
+        - Không có nhiều dấu cấch liên tiếp nhau
+        - Chỉ đầu mỗi từ được viết hoa -->
+<script>
+    function normalizeString(str) {
+        let a = str.split(" ");
+        //loại dáu cách thừa
+        let b = new Array();
+
+        for (let i=0;i<a.length;i++)
+            if (a[i].length>0)
+                b.push(a[i]);
+        let tmp= b.join(" ");
+        //thay chữ hoa/thường
+        let tmpUpper = tmp.toUpperCase();
+        // viết hoa chữ cái đầu tiên  
+        tmp = tmp.toLowerCase();
+        tmp = tmpUpper.charAt(0) + tmp.substring(1,tmp.length);
+        //viết hoa các chữ đầu
+        for (let i=1; i<tmp.length;i++)
+            if (tmp.charAt(i)===" ")
+                tmp = tmp.substring(0,i+1) + tmpUpper.charAt(i+1)+ tmp.substring(i+2,tmp.length);
+        return tmp;
+    }
+
+
+    alert(normalizeString("  Nguyễn        Văn  An         "));
+    function getDay() {
+        const THU = ["Chú nhật", "Thứ hai", "Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy"];
+        let d = new Date();
+        let dayIndex= d.getDay();
+        return THU[dayIndex];
+    }
+let d1 = new Date();
+    for (i=0;i<5000;i++)
+        document.write("Hôm nay là: "+getDay());
+let d2 =new Date();
+// /* Viết chươngg trình tính thời gian thực hiện chương trình */
+
+document.write("<br> Thời gian thực hiện"+ (d2.getMilliseconds()-d1.getMilliseconds()));
+
+</script>
+</body>
+</html>

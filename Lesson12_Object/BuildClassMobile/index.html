@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .Mobile{
+            height: 300px;
+            width: 400px;
+            background-color: aquamarine
+        }
+    </style>
 </head>
 <body>
-
+<div class="Mobile" id="iphone">
+    <button class="onoff" id="iphone-onoff" onclick="turnOnOff()">Power</button>
+    <div class="title" id="iphone-name">Iphone</div>
+    <div class="status" id="iphone-status">Status</div>
+    <div class="battery" id="iphone-battery">Battery</div>
+    <div class="inbox" id="iphone-inbox"></div>
+    <div class="outbox" id="iphone-outbox"></div>
+    <div class="draft" id="iphone-draft"></div>
+    <input class="msg" oninput="mobileIphone.writeMessage(this.value)" placeholder="Message....">
+    <button class="send" onclick="sendMessage(mobileIphone,mobileNokia)">Send</button>
+</div>
+<div class="Mobile" id="nokia">
+    <div class="title" id="nokia-name">Iphone</div>
+    <div class="status" id="nokia-status">Status</div>
+    <div class="battery" id="nokia-battery">Battery</div>
+    <div class="inbox" id="nokia-inbox"></div>
+    <div class="outbox" id="nokia-outbox"></div>
+    <div class="draft" id="nokia-draft"></div>
+    <input class="msg" oninput="mobileNokia.writeMessage(this.value)" placeholder="Message....">
+    <button class="send" onclick="sendMessage(mobileNokia,mobileIphone)">Send</button>
+</div>
 </body>
 <script src="myJs.js"></script>
 </html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #myForm{
+            display: none;
+        }
+
+    </style>
+    <script>
+        function showForm(){
+            document.getElementById("myForm").style.display = "block";
+
+        }
+        function closeForm(){
+            document.getElementById("myForm").style.display = "none";
+
+        }
+    </script>
+</head>
+<body>
+<h3>STUDENT INFORMATION</h3>
+<form action="#" method="p" id="myForm">
+    <table>
+        <tr>
+            <td width="100">Name</td>
+            <td><input type="text" name="fullname" value="Nguyễn Văn An"></td>
+        </tr>
+        <tr>
+            <td>Birthday</td>
+            <td><input type="date" name="DOB"></td>
+        </tr>
+        <tr>
+            <td>Sex</td>
+            <td>  <input type="radio" name="sex"> Nam
+                <input type="radio" name="sex"> Nữ <br></td>
+        </tr>
+        <tr>
+            <td>Hometown</td>
+            <td> <select>
+                <option value="HN"> Hà Nội</option>
+                <option value="HP"> Hải Phòng</option>
+                <option value="ND"> Nam Định</option>
+                <option value="BN"> Bắc Ninh</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Interests</td>
+            <td> <input type="checkbox" name="hobby[]" value="1"> Thể thao
+                <input type="checkbox" name="hobby[]" value="2"> Du lịch
+                <input type="checkbox" name="hobby[]" value="4"> Phim ảnh</td>
+        </tr>
+        <tr>
+            <td>PhotoID</td>
+            <td> <input type="file" name="avatar"></td>
+        </tr>
+
+
+        <tr>
+            <td>Username</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>Passwords</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+
+        <tr>
+            <td width="100">Describe</td>
+            <td><textarea name="description">abc</textarea></td>
+        </tr>
+
+        <tr>
+            <td width="100"></td>
+            <td><input type="submit" value="send">
+                <input type="reset" value="reset">
+                <input type="button" value="close" onclick="closeForm()">
+            </td>
+        </tr>
+    </table>
+</form>
+<h3>Student List</h3>
+<button onclick="showForm()">Add Student</button><br>
+<table border="1">
+    <tr>
+        <th>No.</th>
+        <th>Student ID</th>
+        <th>Full Name</th>
+        <th>Birthday</th>
+        <th>Home town</th>
+        <th>Username</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>ABC123</td>
+        <td>Nguyen Van An</td>
+        <td>01/01/2000</td>
+        <td>Ha Noi</td>
+        <td>AnNV123</td>
+        <td>Edit | Delete</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>ABC135</td>
+        <td>Tran Thi Binh</td>
+        <td>01/11/2001</td>
+        <td>Nam Dinh</td>
+        <td>BinhTT123</td>
+        <td>Edit | Delete</td>
+    </tr>
+</table>
+
+
+</body>
+</html>
