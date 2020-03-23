@@ -7,13 +7,22 @@
         .Mobile{
             height: 300px;
             width: 400px;
-            background-color: aquamarine
+            background-color: aquamarine;
+            margin: 50px;
+            padding: 20px;
         }
+        .title{
+            text-align: center;
+            background-color: azure;
+            border: 1px;
+            border-collapse: collapse;
+            padding: 10px;
+        }}
     </style>
 </head>
 <body>
 <div class="Mobile" id="iphone">
-    <button class="onoff" id="iphone-onoff" onclick="turnOnOff()">Power</button>
+    <button class="onoff" id="iphone-onoff" onclick="mobileIphone.turnOnOff()">Power</button>
     <div class="title" id="iphone-name">Iphone</div>
     <div class="status" id="iphone-status">Status</div>
     <div class="battery" id="iphone-battery">Battery</div>

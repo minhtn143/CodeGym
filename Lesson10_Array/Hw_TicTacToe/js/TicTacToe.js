@@ -3,7 +3,7 @@ let myBoard = [];
 let PLAYED = 1;
 let isGameOver = false;
 
-function creatBoard() {
+function createBoard() {
     nRow = +prompt("Enter Row:");
     nColumn = +prompt("Enter Column:");
 
@@ -140,5 +140,5 @@ function gameOver(count) {
 
 }
 
-creatBoard();
+createBoard();
 

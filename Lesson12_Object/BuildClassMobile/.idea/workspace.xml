@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55fe73e8-be51-4c87-99f3-23c7e394e390" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Bai18_OOP-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentInformation/.idea/StudentInformation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentInformation/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentInformation/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentInformation/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentInformation/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentInformation/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentInformation/js/myJs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bai17_OOP_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Bai17_OOP_demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdamEvaApple/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdamEvaApple/.idea/AdamEvaApple.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdamEvaApple/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdamEvaApple/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdamEvaApple/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdamEvaApple/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdamEvaApple/myJs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex_GameSimple/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex_GameSimple/.idea/Ex_GameSimple.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex_GameSimple/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex_GameSimple/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex_GameSimple/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex_GameSimple/objects-master/.idea/objects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_FlashLamp/.idea/Practice_FlashLamp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice_FlashLamp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myJs.js" beforeDir="false" afterPath="$PROJECT_DIR$/myJs.js" afterDir="false" />
@@ -42,7 +48,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ex_GameSimple" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -55,7 +61,11 @@
       <option name="presentableId" value="Default" />
       <updated>1584543018149</updated>
       <workItem from="1584543019994" duration="11041000" />
-      <workItem from="1584602994751" duration="4569000" />
+      <workItem from="1584602994751" duration="5499000" />
+      <workItem from="1584609751513" duration="2852000" />
+      <workItem from="1584632991686" duration="1331000" />
+      <workItem from="1584636232451" duration="1745000" />
+      <workItem from="1584666681162" duration="143000" />
     </task>
     <servers />
   </component>
@@ -63,6 +73,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="154" y="258" width="624" height="540" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584666716065">
+      <screen x="0" y="28" width="1920" height="1005" />
+    </state>
+    <state x="154" y="258" width="624" height="540" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.28.1920.1005@0.28.1920.1005" timestamp="1584666716065" />
+    <state x="1219" y="288" key="FileChooserDialogImpl" timestamp="1584666818067">
+      <screen x="0" y="28" width="1920" height="1005" />
+    </state>
+    <state x="1219" y="288" key="FileChooserDialogImpl/0.28.1920.1005@0.28.1920.1005" timestamp="1584666818067" />
     <state x="216" y="445" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584548555820">
       <screen x="0" y="28" width="1920" height="1005" />
     </state>

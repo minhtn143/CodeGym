@@ -2,28 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30ccd913-f095-4232-acc3-e1bbb8ba7bc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Ex_Condition01.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../appGoodFastCheap/.idea/appGoodFastCheap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../appGoodFastCheap/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../appGoodFastCheap/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../appGoodFastCheap/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../appGoodFastCheap/GoodFastCheap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Practice_CheckYear/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Practice_CheckYear/.idea/Practice_CheckYear.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Practice_CheckYear/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Practice_CheckYear/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Practice_CheckYear/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Practice_CheckYear/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Lesson9_Loop/Practice_Loop1/sumDaytoDay1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Lesson9_Loop/sumDaytoDay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lesson9_Loop/Bai9_LoopFor.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lesson9_Loop/Bai9_LoopFor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lesson9_Loop/Test_Quick1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lesson9_Loop/Test_Quick1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/AdamEvaApple/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/AdamEvaApple/.idea/AdamEvaApple.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/AdamEvaApple/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/AdamEvaApple/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/AdamEvaApple/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/AdamEvaApple/myJs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/Ex_GameSimple/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/Ex_GameSimple/.idea/Ex_GameSimple.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/Ex_GameSimple/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/Ex_GameSimple/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/Ex_GameSimple/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/Ex_GameSimple/objects-master/.idea/objects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/New_TicTacToe/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/New_TicTacToe/.idea/New_TicTacToe.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/New_TicTacToe/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/New_TicTacToe/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/New_TicTacToe/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/New_TicTacToe/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/New_TicTacToe/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/Practice_FlashLamp/.idea/Practice_FlashLamp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/Practice_FlashLamp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/SwitchButtonAndLamp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/SwitchButtonAndLamp/.idea/SwitchButtonAndLamp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/SwitchButtonAndLamp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/SwitchButtonAndLamp/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/SwitchButtonAndLamp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/SwitchButtonAndLamp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Lesson12_Object/SwitchButtonAndLamp/js/myJs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Condition01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jvscript/Condition01.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ThuatToan/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ThuatToan/.idea/ThuatToan.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ThuatToan/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ThuatToan/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ThuatToan/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ThuatToan/Bai19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lesson10_Array/Hw_TicTacToe/js/TicTacToe.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lesson10_Array/Hw_TicTacToe/js/TicTacToe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lesson12_Object/BuildClassMobile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lesson12_Object/BuildClassMobile/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lesson12_Object/BuildClassMobile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lesson12_Object/BuildClassMobile/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lesson12_Object/BuildClassMobile/myJs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lesson12_Object/BuildClassMobile/myJs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lesson12_Object/AdamEvaApple/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +54,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -51,6 +72,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -64,6 +86,8 @@
       <updated>1583896309241</updated>
       <workItem from="1583896311197" duration="2313000" />
       <workItem from="1583910640296" duration="599000" />
+      <workItem from="1584932421515" duration="128000" />
+      <workItem from="1584932633673" duration="6045000" />
     </task>
     <servers />
   </component>
@@ -75,5 +99,9 @@
       <screen x="0" y="28" width="1920" height="1005" />
     </state>
     <state x="1005" y="192" width="800" height="673" key="#Notifications/0.28.1920.1005@0.28.1920.1005" timestamp="1583902564189" />
+    <state x="1209" y="272" key="FileChooserDialogImpl" timestamp="1584939396659">
+      <screen x="0" y="28" width="1920" height="1005" />
+    </state>
+    <state x="1209" y="272" key="FileChooserDialogImpl/0.28.1920.1005@0.28.1920.1005" timestamp="1584939396659" />
   </component>
 </project>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam and Eva</title>
+    <style>
+        .eva{
+            position: absolute;
+            top: 13px;
+            left: 350px;
+        }
+        .adam{
+            position: absolute;
+            top: 50px;
+        }
+        .apple{
+            top: 50px;
+            left: 221px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="adam">
+        <img src="img/adam.jpg" alt="I'm Adam" onclick="sayAnything(adam)" width="200"/>
+        <br>
+        <button id="eatAdam" onclick="eatApple(adam,apple)">EAT</button>
+        <button id="checkAdam" onclick="check(adam,apple)">CHECK</button>
+    </div>
+    <div class="eva">
+        <img src="img/eva.png" alt="I'm Eva" onclick="sayAnything(eva)" width="150"/>
+        <br>
+        <button id="eatEva" onclick="eatApple(eva,apple)">EAT</button>
+        <button id="checkEva" onclick="check(eva,apple)">CHECK</button>
+    </div>
+    <div class="apple">
+        <img src="img/apple.png" alt="I'm Apple" width="100"/>
+    </div>
+
+    <script src="myJs.js"></script>
+
+</body>
+</html>

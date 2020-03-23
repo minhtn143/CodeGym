@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Searching and Sorting Algorithms</title>
+</head>
+<body>
+<script>
+    const MAX = 100;
+
+    function MyArray() {
+        this.arr = new Array(MAX);
+
+        this.init = function () {
+            for (let i = 0; i < MAX; i++)
+                this.arr[i] = Math.round(Math.random() * 100);
+        }
+
+
+        this.show = function () {
+            document.write(this.arr.join("    "));
+        }
+        //tìm kiếm tuần tự
+        this.searchSeq = function (d) {
+            for (let i=0; i<MAX; i++)
+                if (this.arr[i]===d)
+                    return i;
+            return -1;
+        }
+        // tìm kiếm tuần tự và trả lại danh sách vị trí
+        this.searchSeqList = function (d) {
+            let resultArray = [];
+            for (let i=0; i<MAX; i++)
+                if (this.arr[i]===d)
+                    resultArray.push(i);
+            return resultArray;
+        }
+        //tìm kiếm nhị phần
+        this.searchBinary = function (x) {
+            let left = 0;
+            let right = this.arr.length;
+
+            while (left <= right){
+                let middle = Math.floor((left +right)/2);
+                if(this.arr[middle]==x)
+                    return middle;
+                else{
+                    if(this.arr[middle]>x)
+                        right = middle -1;
+                    else
+                        left = middle + 1;
+                }
+            }
+            return -1;
+        }
+        //tìm kiếm nhị phần bằng đẹ quy
+        this.searchBinaryRecursive = function (left,right,x) {
+            if (left>right)
+                return -1;
+            let middle = Math.floor((left+right)/2);
+            if (this.arr[middle]===x)
+                    return middle;
+            else{
+                if (this.arr[middle]>x)
+                    return this.searchBinaryRecursive(left,middle-1,x);
+                else
+                    return this.searchBinaryRecursive(middle+1, right,x);
+            }
+        }
+        this.sortSelection = function () {
+            for(let i=0; i<this.arr.length - 1; i++)
+            {
+                let posMin=i;
+                for(let j=i+1; j<this.arr.length;j++)
+                    if(this.arr[j] < this.arr[posMin])
+                        posMin= j;
+                let tmp = this.arr[i];
+                this.arr[i] = this.arr[posMin];
+                this.arr[posMin]=tmp;
+            }
+        }
+    }
+
+
+
+    function main() {
+        let myArray1 = new MyArray();
+
+        myArray1.init();
+        myArray1.show();
+        let findX = +prompt("Find something: ");
+        document.write("<br> Position " + findX + " at " + myArray1.searchSeq(findX));
+
+        let searchList = myArray1.searchSeqList(findX);
+        if (searchList==0)
+            alert("Not found!!!");
+        else
+            document.write("<br> Position " + findX + " at " + searchList);
+
+        document.write("<br> Position " + findX + " at " + myArray1.searchSeq(findX));
+        myArray1.sortSelection();
+        document.write("<br> After sort: <br>");
+        myArray1.show();
+        document.write("<br> Position " + findX + " at " + myArray1.searchBinary(findX));
+
+    }
+
+    main();
+</script>
+</body>
+</html>
