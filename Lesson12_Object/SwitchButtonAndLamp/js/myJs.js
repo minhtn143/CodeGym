@@ -26,12 +26,12 @@ class SwitchButton {
     }
     switchOff(){
         if (this.lamp.status)
-            this.lamp.status=false;
+            this.lamp.turnOff();
         this.status=false;
     }
     switchOn(){
         if (!this.lamp.status)
-            this.lamp.status=true;
+            this.lamp.turnOn();
         this.status=true;
     }
 }
