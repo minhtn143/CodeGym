@@ -1,45 +1,46 @@
-let table = new Table(HEIGHT, WIDTH);
-let player1 = new Player("MINH", 15, HEIGHT / 2, 20, 150, "red");
-let com = new Player("COM", WIDTH - 40, HEIGHT / 2, 20, 150, "yellow");
-let ball = new Ball(WIDTH / 2, HEIGHT / 2);
-let up = document.getElementById("buttonUp");
-let down = document.getElementById("buttonDown");
-let upInterval = {}, downInterval = {};
-let isGameOver = false;
-const WINPOINT = 20;
-let ComAiLevel = 30;
+let playerName = prompt("Enter your name: ");
+let player1 = new Player(playerName, PLAYER_X_POSITION, PLAYER_Y_POSITION, PLAYER_WIDTH, PLAYER_HEIGHT, "red");
+let com = new Player("COM", TABLE_WIDTH - PLAYER_X_POSITION, PLAYER_Y_POSITION, PLAYER_WIDTH, PLAYER_HEIGHT, "yellow");
+let table = new Table(TABLE_HEIGHT, TABLE_WIDTH);
+let ball = new Ball(TABLE_WIDTH / 2, TABLE_HEIGHT / 2);
+
 
 function createGame() {
 
-
-    table.drawRectangle(0, 0, WIDTH, HEIGHT, "blue");
-    table.drawNet(WIDTH / 2, 0, 5, 15, "white");
-    table.drawPoint(player1.point, 100, 80);
-    table.drawPoint(com.point, WIDTH - 100, 80);
-
+    table.drawRectangle(TABLE_X_POSITION, TABLE_Y_POSITION, TABLE_WIDTH, TABLE_HEIGHT, TABLE_COLOR);
+    table.drawNet(TABLE_WIDTH / 2, 0, NET_WIDTH, NET_HEIGHT, NET_COLOR);
+    table.drawPoint(player1.point, POINT_X_POSITION, POINT_Y_POSITION, "red");
+    table.drawPoint(com.point, TABLE_WIDTH - POINT_X_POSITION, POINT_Y_POSITION, "yellow");
 
     player1.drawPlayer(table);
     com.drawPlayer(table);
-
     ball.drawBall();
 }
 
+
 //Di chuyển paddle
+//Di chuyển bằng keyboard
 window.addEventListener("keydown", move);
 
 function move(evt) {
     console.log(evt.key);
     switch (evt.key) {
         case "ArrowDown":
-            if (player1.playerBottom() < HEIGHT)
                 player1.moveDown();
             break;
-
         case "ArrowUp":
-            if (player1.playerTop() > 0)
                 player1.moveUp();
             break;
     }
+}
+
+
+//Di chuyển bằng chuột
+canvas.addEventListener("mousemove", getMousePos);
+
+function getMousePos(evt) {
+    let rect = canvas.getBoundingClientRect();
+        player1.yPosition = evt.clientY - rect.top - player1.height / 2;
 }
 
 //Check chạm tường hai trên dưới thì bật lại
@@ -52,93 +53,82 @@ function checkCollisionWall() {
 
 
 //check bóng bay ra ngoài bàn
-function checkOut(player) {
+function checkOut(player1, player2) {
     if (ball.isOnTable() === false) {
-        player.hitPoint();
-        resetBall();
+        if (ball.xPosition - ball.size < TABLE_WIDTH / 2)
+            player2.hitPoint();
+        else
+            player1.hitPoint();
+        resetPosition();
     }
 }
 
 //check phần side của bên nào
 function checkSide() {
-    if (ball.xPosition - ball.size < WIDTH / 2)
+    if (ball.xPosition - ball.size < TABLE_WIDTH / 2)
         return player1;
-    if (ball.xPosition + ball.size > WIDTH / 2)
+    if (ball.xPosition + ball.size > TABLE_WIDTH / 2)
         return com;
 }
 
-//trả bóng lại về đầu bàn
-function resetBall() {
+//trả lại về vị trí ban đầu
+function resetPosition() {
     ball.changeSpeed();
-    ball.xPosition = WIDTH / 2;
-    ball.yPostion = HEIGHT / 2;
+    ball.xPosition = TABLE_WIDTH / 2;
+    ball.yPostion = TABLE_HEIGHT / 2;
     ball.setDirectVelocityX();
     ball.velocityY = ball.speed * Math.random();
+    player1.xPosition = PLAYER_X_POSITION;
+    player1.yPosition = PLAYER_Y_POSITION;
+    com.xPosition = TABLE_WIDTH - PLAYER_X_POSITION;
+    com.yPosition = PLAYER_Y_POSITION;
 }
 
-function controlButtonUp() {
-    up.onmousedown = function () {
-        upInterval = setInterval(function () {
-            player1.moveUp();
-        }, 50);
-    };
-    up.onmouseup = function () {
-        clearInterval(upInterval);
-    }
-}
-
-function controlButtonDown() {
-    down.onmousedown = function () {
-        downInterval = setInterval(function () {
-            player1.moveDown();
-        }, 50);
-    };
-    down.onmouseup = function () {
-        clearInterval(downInterval);
-    }
-}
-
-function control() {
-    controlButtonUp();
-    controlButtonDown()
-}
-
+//Com tự di chuyển
 function comAi() {
-    if (com.playerTop() >= 0 || com.playerBottom() <= HEIGHT)
+    // if (com.playerTop() >= 0 || com.playerBottom() <= TABLE_HEIGHT)
         com.yPosition += ((ball.yPostion - (com.yPosition + com.height / 2)))
-            * Math.random() / ComAiLevel;
+            * AI_LEVEL;
+}
+//check điều kiện thắng
+function checkWin(player, com) {
+    if (player.point === WIN_POINT) {
+        alert(player.name + " IS WINNER");
+        isGameOver = false;
+    }
+    if (com.point === WIN_POINT) {
+        alert(com.name + " IS WINNER");
+        isGameOver = false;
+    }
 }
 
-function checkWin(player1, com) {
-    if (player1.point === WINPOINT || com.point === WINPOINT) {
-        alert("GAME OVER");
-        return true;
-    } else return false;
-}
-
-function gameOver() {
-    if (checkWin())
-        isGameOver = true;
-    return isGameOver;
-}
 
 function update() {
     checkWin(player1, com);
     comAi();
-    checkCollisionWall();
     ball.checkCollisionPlayer(checkSide());
-    checkOut(checkSide());
-
+    checkCollisionWall();
+    checkOut(player1, com);
     ball.runBall();
 }
 
-function startGame() {
-    update();
-    createGame();
-    requestAnimationFrame(startGame)
+function runningGame() {
+    if (isGameOver){
+        update();
+        createGame();
+        requestAnimationFrame(runningGame)
+    }
 }
 
-do startGame();
-while (gameOver());
+function restart() {
+    location.reload();
+}
+function start() {
+
+    if (confirm("ARE YOU READY??"))
+        runningGame();
+}
+
+start();
 
 

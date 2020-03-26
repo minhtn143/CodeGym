@@ -1,6 +1,8 @@
 const PLAYER_SPEED = 15;
-const ORIENTATION_UP = "up";
-const ORIENTATION_DOWN = "down";
+const PLAYER_WIDTH = 15;
+const PLAYER_HEIGHT = 150;
+const PLAYER_X_POSITION = 20;
+const PLAYER_Y_POSITION = TABLE_HEIGHT/2 - PLAYER_HEIGHT/2;
 
 class Player {
     constructor(name, xPosition, yPosition, width, height, color) {
@@ -11,25 +13,18 @@ class Player {
         this.height = height;
         this.color = color;
         this.point = 0;
-        this.orientation= ORIENTATION_DOWN;
 
     }
     drawPlayer(table){
         table.drawRectangle(this.xPosition,this.yPosition, this.width, this.height,this.color);
     }
-
-    updatePostion(newY) {
-        this.yPosition = newY;
-    }
-
     moveUp() {
         this.yPosition -= PLAYER_SPEED;
     }
-
     moveDown() {
-        this.yPosition += PLAYER_SPEED;
-    }
+            this.yPosition += PLAYER_SPEED;
 
+    }
     hitPoint (){
         this.point++;
     }
@@ -45,7 +40,8 @@ class Player {
     playerRight(){
         return  this.xPosition + this.width;
     }
-
 }
+
+
 
 
